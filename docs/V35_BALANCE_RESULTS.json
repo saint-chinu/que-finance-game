@@ -1,0 +1,780 @@
+[
+  {
+    "seed": 73129,
+    "policy": "steady",
+    "turn": 120,
+    "years": [
+      -1794,
+      -620,
+      374,
+      430,
+      562,
+      854,
+      526,
+      482,
+      590,
+      577
+    ],
+    "cash": 11961094,
+    "equity": 11982393,
+    "ma": "ineligible",
+    "avgEBITDA": 841388.3333333334,
+    "properties": 0,
+    "fishery": false,
+    "operations": []
+  },
+  {
+    "seed": 73129,
+    "policy": "neglect",
+    "turn": 51,
+    "years": [
+      -1748,
+      -1626,
+      -1844,
+      -3017
+    ],
+    "cash": -443927,
+    "equity": 88440,
+    "properties": 0,
+    "fishery": false,
+    "operations": []
+  },
+  {
+    "seed": 73129,
+    "policy": "retail",
+    "turn": 120,
+    "years": [
+      -143,
+      1144,
+      590,
+      3657,
+      3607,
+      3862,
+      3808,
+      4243,
+      4374,
+      4379
+    ],
+    "cash": 39900984,
+    "equity": 39518784,
+    "ma": "offer",
+    "avgEBITDA": 6232588.333333333,
+    "properties": 0,
+    "fishery": false,
+    "operations": [
+      {
+        "turn": 25,
+        "action": "hire"
+      },
+      {
+        "turn": 26,
+        "action": "investment"
+      },
+      {
+        "turn": 27,
+        "action": "investment"
+      },
+      {
+        "turn": 28,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 73129,
+    "policy": "fish",
+    "turn": 120,
+    "years": [
+      -143,
+      1144,
+      -1239,
+      887,
+      3630,
+      2442,
+      2386,
+      2865,
+      3768,
+      3273
+    ],
+    "cash": 30128630,
+    "equity": 29011193,
+    "ma": "offer",
+    "avgEBITDA": 5123050,
+    "properties": 0,
+    "fishery": true,
+    "operations": [
+      {
+        "turn": 25,
+        "action": "investment"
+      },
+      {
+        "turn": 26,
+        "action": "hire"
+      },
+      {
+        "turn": 27,
+        "action": "hire"
+      },
+      {
+        "turn": 28,
+        "action": "hire"
+      }
+    ]
+  },
+  {
+    "seed": 73129,
+    "policy": "property",
+    "turn": 120,
+    "years": [
+      -143,
+      1144,
+      1480,
+      1473,
+      299,
+      1237,
+      -32,
+      1130,
+      364,
+      1574
+    ],
+    "cash": 6122701,
+    "equity": 18526039,
+    "ma": "ineligible",
+    "avgEBITDA": 3078363,
+    "properties": 3,
+    "fishery": false,
+    "operations": [
+      {
+        "turn": 52,
+        "action": "investment"
+      },
+      {
+        "turn": 76,
+        "action": "investment"
+      },
+      {
+        "turn": 100,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 73129,
+    "policy": "mixed",
+    "turn": 120,
+    "years": [
+      -143,
+      1144,
+      590,
+      3657,
+      992,
+      2402,
+      2475,
+      3009,
+      5457,
+      5914
+    ],
+    "cash": 20304412,
+    "equity": 35495486,
+    "ma": "offer",
+    "avgEBITDA": 10090599.333333334,
+    "properties": 3,
+    "fishery": true,
+    "operations": [
+      {
+        "turn": 25,
+        "action": "hire"
+      },
+      {
+        "turn": 26,
+        "action": "investment"
+      },
+      {
+        "turn": 27,
+        "action": "investment"
+      },
+      {
+        "turn": 28,
+        "action": "investment"
+      },
+      {
+        "turn": 49,
+        "action": "investment"
+      },
+      {
+        "turn": 50,
+        "action": "hire"
+      },
+      {
+        "turn": 51,
+        "action": "hire"
+      },
+      {
+        "turn": 52,
+        "action": "hire"
+      },
+      {
+        "turn": 64,
+        "action": "investment"
+      },
+      {
+        "turn": 76,
+        "action": "investment"
+      },
+      {
+        "turn": 88,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 73129,
+    "policy": "old",
+    "turn": 119,
+    "years": [
+      -143,
+      1144,
+      1480,
+      1473,
+      299,
+      1237,
+      -32,
+      1130,
+      -3107
+    ],
+    "cash": -56749,
+    "equity": 10817679,
+    "properties": 3,
+    "fishery": false,
+    "operations": [
+      {
+        "turn": 52,
+        "action": "investment"
+      },
+      {
+        "turn": 76,
+        "action": "investment"
+      },
+      {
+        "turn": 100,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 91,
+    "policy": "steady",
+    "turn": 120,
+    "years": [
+      -1748,
+      -372,
+      311,
+      416,
+      445,
+      819,
+      565,
+      566,
+      535,
+      513
+    ],
+    "cash": 11997853,
+    "equity": 12049519,
+    "ma": "ineligible",
+    "avgEBITDA": 823400,
+    "properties": 0,
+    "fishery": false,
+    "operations": []
+  },
+  {
+    "seed": 91,
+    "policy": "neglect",
+    "turn": 51,
+    "years": [
+      -1702,
+      -1488,
+      -1956,
+      -2988
+    ],
+    "cash": -204255,
+    "equity": 317725,
+    "properties": 0,
+    "fishery": false,
+    "operations": []
+  },
+  {
+    "seed": 91,
+    "policy": "retail",
+    "turn": 120,
+    "years": [
+      -102,
+      1289,
+      656,
+      3679,
+      3586,
+      3904,
+      3861,
+      4338,
+      4357,
+      4353
+    ],
+    "cash": 40252566,
+    "equity": 39921940,
+    "ma": "offer",
+    "avgEBITDA": 6248426.666666667,
+    "properties": 0,
+    "fishery": false,
+    "operations": [
+      {
+        "turn": 25,
+        "action": "hire"
+      },
+      {
+        "turn": 26,
+        "action": "investment"
+      },
+      {
+        "turn": 27,
+        "action": "investment"
+      },
+      {
+        "turn": 28,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 91,
+    "policy": "fish",
+    "turn": 120,
+    "years": [
+      -102,
+      1289,
+      -2375,
+      3696,
+      3513,
+      1199,
+      1571,
+      2906,
+      1662,
+      3585
+    ],
+    "cash": 28336143,
+    "equity": 26944783,
+    "ma": "offer",
+    "avgEBITDA": 4341712,
+    "properties": 0,
+    "fishery": true,
+    "operations": [
+      {
+        "turn": 25,
+        "action": "investment"
+      },
+      {
+        "turn": 26,
+        "action": "hire"
+      },
+      {
+        "turn": 27,
+        "action": "hire"
+      },
+      {
+        "turn": 28,
+        "action": "hire"
+      }
+    ]
+  },
+  {
+    "seed": 91,
+    "policy": "property",
+    "turn": 120,
+    "years": [
+      -102,
+      1289,
+      1435,
+      1464,
+      505,
+      240,
+      657,
+      1077,
+      1538,
+      1816
+    ],
+    "cash": 9608156,
+    "equity": 19920707,
+    "ma": "ineligible",
+    "avgEBITDA": 3508962.3333333335,
+    "properties": 3,
+    "fishery": false,
+    "operations": [
+      {
+        "turn": 52,
+        "action": "investment"
+      },
+      {
+        "turn": 64,
+        "action": "investment"
+      },
+      {
+        "turn": 76,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 91,
+    "policy": "mixed",
+    "turn": 120,
+    "years": [
+      -102,
+      1289,
+      656,
+      3679,
+      1698,
+      2162,
+      2708,
+      3382,
+      3320,
+      5516
+    ],
+    "cash": 28570167,
+    "equity": 34308125,
+    "ma": "offer",
+    "avgEBITDA": 8881014,
+    "properties": 3,
+    "fishery": true,
+    "operations": [
+      {
+        "turn": 25,
+        "action": "hire"
+      },
+      {
+        "turn": 26,
+        "action": "investment"
+      },
+      {
+        "turn": 27,
+        "action": "investment"
+      },
+      {
+        "turn": 28,
+        "action": "investment"
+      },
+      {
+        "turn": 49,
+        "action": "investment"
+      },
+      {
+        "turn": 50,
+        "action": "hire"
+      },
+      {
+        "turn": 51,
+        "action": "hire"
+      },
+      {
+        "turn": 52,
+        "action": "hire"
+      },
+      {
+        "turn": 64,
+        "action": "investment"
+      },
+      {
+        "turn": 76,
+        "action": "investment"
+      },
+      {
+        "turn": 88,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 91,
+    "policy": "old",
+    "turn": 82,
+    "years": [
+      -102,
+      1289,
+      1435,
+      1464,
+      1584,
+      -1751
+    ],
+    "cash": -591821,
+    "equity": 11490409,
+    "properties": 2,
+    "fishery": false,
+    "operations": [
+      {
+        "turn": 64,
+        "action": "investment"
+      },
+      {
+        "turn": 76,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 202609,
+    "policy": "steady",
+    "turn": 120,
+    "years": [
+      -1517,
+      -413,
+      360,
+      499,
+      579,
+      661,
+      578,
+      577,
+      535,
+      571
+    ],
+    "cash": 12405029,
+    "equity": 12429315,
+    "ma": "ineligible",
+    "avgEBITDA": 851193.3333333334,
+    "properties": 0,
+    "fishery": false,
+    "operations": []
+  },
+  {
+    "seed": 202609,
+    "policy": "neglect",
+    "turn": 52,
+    "years": [
+      -1460,
+      -1551,
+      -1888,
+      -2809
+    ],
+    "cash": -9935,
+    "equity": 483640,
+    "properties": 0,
+    "fishery": false,
+    "operations": []
+  },
+  {
+    "seed": 202609,
+    "policy": "retail",
+    "turn": 120,
+    "years": [
+      95,
+      1286,
+      641,
+      3658,
+      3536,
+      3820,
+      3788,
+      4278,
+      4360,
+      4380
+    ],
+    "cash": 40231503,
+    "equity": 39842308,
+    "ma": "offer",
+    "avgEBITDA": 6227711.666666667,
+    "properties": 0,
+    "fishery": false,
+    "operations": [
+      {
+        "turn": 25,
+        "action": "hire"
+      },
+      {
+        "turn": 26,
+        "action": "investment"
+      },
+      {
+        "turn": 27,
+        "action": "investment"
+      },
+      {
+        "turn": 28,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 202609,
+    "policy": "fish",
+    "turn": 120,
+    "years": [
+      95,
+      1286,
+      -1208,
+      3189,
+      2207,
+      3442,
+      4024,
+      3078,
+      2765,
+      2272
+    ],
+    "cash": 31867937,
+    "equity": 31150813,
+    "ma": "offer",
+    "avgEBITDA": 4322500,
+    "properties": 0,
+    "fishery": true,
+    "operations": [
+      {
+        "turn": 25,
+        "action": "investment"
+      },
+      {
+        "turn": 26,
+        "action": "hire"
+      },
+      {
+        "turn": 27,
+        "action": "hire"
+      },
+      {
+        "turn": 28,
+        "action": "hire"
+      }
+    ]
+  },
+  {
+    "seed": 202609,
+    "policy": "property",
+    "turn": 120,
+    "years": [
+      95,
+      1286,
+      1475,
+      1523,
+      306,
+      547,
+      1550,
+      244,
+      912,
+      1041
+    ],
+    "cash": 10448746,
+    "equity": 18979107,
+    "ma": "ineligible",
+    "avgEBITDA": 3415652.3333333335,
+    "properties": 3,
+    "fishery": false,
+    "operations": [
+      {
+        "turn": 52,
+        "action": "investment"
+      },
+      {
+        "turn": 64,
+        "action": "investment"
+      },
+      {
+        "turn": 88,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 202609,
+    "policy": "mixed",
+    "turn": 120,
+    "years": [
+      95,
+      1286,
+      641,
+      3658,
+      642,
+      4514,
+      4799,
+      4043,
+      4496,
+      3923
+    ],
+    "cash": 34405083,
+    "equity": 38096351,
+    "ma": "offer",
+    "avgEBITDA": 8856922,
+    "properties": 3,
+    "fishery": true,
+    "operations": [
+      {
+        "turn": 25,
+        "action": "hire"
+      },
+      {
+        "turn": 26,
+        "action": "investment"
+      },
+      {
+        "turn": 27,
+        "action": "investment"
+      },
+      {
+        "turn": 28,
+        "action": "investment"
+      },
+      {
+        "turn": 49,
+        "action": "investment"
+      },
+      {
+        "turn": 50,
+        "action": "hire"
+      },
+      {
+        "turn": 51,
+        "action": "hire"
+      },
+      {
+        "turn": 52,
+        "action": "hire"
+      },
+      {
+        "turn": 64,
+        "action": "investment"
+      },
+      {
+        "turn": 76,
+        "action": "investment"
+      },
+      {
+        "turn": 88,
+        "action": "investment"
+      }
+    ]
+  },
+  {
+    "seed": 202609,
+    "policy": "old",
+    "turn": 120,
+    "years": [
+      95,
+      1286,
+      1475,
+      1523,
+      -211,
+      1563,
+      1543,
+      83,
+      1049,
+      1271
+    ],
+    "cash": 8455267,
+    "equity": 19675712,
+    "ma": "ineligible",
+    "avgEBITDA": 3406159.3333333335,
+    "properties": 2,
+    "fishery": false,
+    "operations": [
+      {
+        "turn": 52,
+        "action": "investment"
+      },
+      {
+        "turn": 88,
+        "action": "investment"
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+const E=require('../dist/js/engine.js'),X=E.extension,R=require('../dist/js/replay.js'),U=require('../dist/js/underwriting.js'),B=require('../dist/js/bank.js');
+function simulate(seed,policy){let s=R.create(seed),years=[],operations=[];if(policy!=='steady'&&policy!=='neglect'){s=X.setSalary(s,180000);s=E.playerSettings(s,{livingCost:120});}let goals=policy==='retail'||policy==='mixed'?['parttime','freezer','tank','warehouse']:[],step=0;
+for(let t=1;t<=120;t++){const m=(t-1)%12+1;let action=policy==='neglect'?'tend':(policy==='steady'?[8,11]:[5,8,11]).includes(m)?'improve':'tend';if(t>=25){try{
+ if(step<goals.length){const g=goals[step];if(g==='parttime'&&s.balances.預金>5000000){s=E.hire(s,'parttime');step++;}else if(E.EQUIPMENT[g]){const q=B.quote(s,U.assess(s),g),amount=Math.floor(q.limit/10000)*10000;if(s.balances.預金+amount>E.gross(s,E.EQUIPMENT[g].cost)+3000000){s=amount>0?B.execute(s,U.assess(s),g,amount):E.buy(s,g);step++;}}}
+ else if(['fish','mixed'].includes(policy)&&!s.expansion.fishery){const q=X.finance(s,X.boatOffer(),U.assess(s),'fishery');if((policy!=='mixed'||t>=49)&&s.balances.預金+q.limit>5280000+(policy==='mixed'?6000000:4000000))s=X.buyFishery(s,q.limit,U.assess(s));}
+ else if(s.expansion.fishery&&s.expansion.fishery.crew.length<3)s=X.hireCrew(s,s.expansion.fishery.crew.length?'crew':'captain');
+ else if(['property','mixed','old'].includes(policy)&&s.expansion.properties.length<3&&t>=49&&m===4){const candidates=X.market(s).sort((a,b)=>policy==='old'?b.age-a.age:a.price-b.price),p=candidates[0],q=X.finance(s,p,U.assess(s));if(s.balances.預金+q.limit>X.totalCost(s,p)+(policy==='old'?1000000:4000000))s=X.buyProperty(s,p.id,q.limit,U.assess(s));}
+ }catch(err){operations.push({turn:t,error:err.message});}}
+ // Internal promotion protects trained part-timers before the four-year departure.
+ if(policy==='retail'||policy==='mixed'){for(const e of s.staffEvents||[])if(e.type==='offer'&&e.status==='pending')s=E.promoteStaff(s,e.staffId);}
+ if(s.actionLocked)operations.push({turn:t,action:s.actionLocked});action=s.actionLocked||action;const r=E.run(s,E.recommend(s,action),'list',action);if(r.report.opening+r.report.inflow-r.report.outflow!==r.state.balances.預金)throw Error('cash mismatch');s=r.state;if(t%12===0)years.push(Math.round(E.profit(s.balances)/1000));if(s.ended||t===120)break;s=E.next(E.compact(s));}
+return {seed,policy,turn:s.turn,years,cash:s.balances.預金,equity:E.managementRatios(s.balances).equity,ma:s.expansion.ma?.phase,avgEBITDA:s.expansion.ma?.average,properties:s.expansion.properties.length,fishery:!!s.expansion.fishery,operations};}
+if(require.main===module)for(const seed of [73129,91,202609])for(const p of ['steady','neglect','retail','fish','property','mixed','old'])console.log(JSON.stringify(simulate(seed,p)));
+module.exports={simulate};

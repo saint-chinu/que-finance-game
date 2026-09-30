@@ -1,0 +1,506 @@
+[
+  {
+    "policy": "steady",
+    "seed": 73129,
+    "stopTurn": 120,
+    "survived": true,
+    "minCash": 6462135,
+    "annual": [
+      {
+        "year": 1,
+        "profit": -1794365,
+        "cash": 6719199,
+        "sales": 15847850,
+        "attraction": 0.8427000000000001,
+        "loyalty": 0,
+        "averageSpend": 2030
+      },
+      {
+        "year": 2,
+        "profit": -619560,
+        "cash": 6617631,
+        "sales": 18677900,
+        "attraction": 1.3845000000000007,
+        "loyalty": 0,
+        "averageSpend": 1977
+      },
+      {
+        "year": 3,
+        "profit": 374415,
+        "cash": 7348058,
+        "sales": 21050550,
+        "attraction": 1.7671499999999998,
+        "loyalty": 0.18919999999999998,
+        "averageSpend": 2014
+      },
+      {
+        "year": 4,
+        "profit": 430085,
+        "cash": 7972322,
+        "sales": 21146750,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.35200000000000004,
+        "averageSpend": 1952
+      },
+      {
+        "year": 5,
+        "profit": 555621,
+        "cash": 8764964,
+        "sales": 21549850,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.5148,
+        "averageSpend": 2045
+      },
+      {
+        "year": 6,
+        "profit": 839245,
+        "cash": 9656195,
+        "sales": 22082550,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.6551999999999997,
+        "averageSpend": 2002
+      },
+      {
+        "year": 7,
+        "profit": 503177,
+        "cash": 10243337,
+        "sales": 21531650,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.6611999999999995,
+        "averageSpend": 2001
+      },
+      {
+        "year": 8,
+        "profit": 528215,
+        "cash": 10772789,
+        "sales": 21537150,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.6447999999999993,
+        "averageSpend": 2002
+      },
+      {
+        "year": 9,
+        "profit": 582402,
+        "cash": 11383739,
+        "sales": 21730950,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.650799999999999,
+        "averageSpend": 1999
+      },
+      {
+        "year": 10,
+        "profit": 576958,
+        "cash": 11954894,
+        "sales": 21689600,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.6343999999999989,
+        "averageSpend": 2000
+      }
+    ],
+    "investments": [],
+    "loans": [],
+    "audits": 4,
+    "staffEvents": [],
+    "additionalTax": 39600
+  },
+  {
+    "policy": "expansion",
+    "seed": 73129,
+    "stopTurn": 120,
+    "survived": true,
+    "minCash": 5642539,
+    "annual": [
+      {
+        "year": 1,
+        "profit": -1794365,
+        "cash": 6719199,
+        "sales": 15847850,
+        "attraction": 0.8427000000000001,
+        "loyalty": 0,
+        "averageSpend": 2030
+      },
+      {
+        "year": 2,
+        "profit": -619560,
+        "cash": 6617631,
+        "sales": 18677900,
+        "attraction": 1.3845000000000007,
+        "loyalty": 0,
+        "averageSpend": 1977
+      },
+      {
+        "year": 3,
+        "profit": 374415,
+        "cash": 7348058,
+        "sales": 21050550,
+        "attraction": 1.7671499999999998,
+        "loyalty": 0.18919999999999998,
+        "averageSpend": 2014
+      },
+      {
+        "year": 4,
+        "profit": 717600,
+        "cash": 7714790,
+        "sales": 22577800,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.32153333333333334,
+        "averageSpend": 2166
+      },
+      {
+        "year": 5,
+        "profit": 976167,
+        "cash": 8759060,
+        "sales": 24651250,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.4795333333333335,
+        "averageSpend": 2448
+      },
+      {
+        "year": 6,
+        "profit": 2174465,
+        "cash": 12200922,
+        "sales": 31809800,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.6775333333333337,
+        "averageSpend": 2463
+      },
+      {
+        "year": 7,
+        "profit": 2788782,
+        "cash": 14596413,
+        "sales": 35867380,
+        "attraction": 1.8242464340724354,
+        "loyalty": 0.6858190476190479,
+        "averageSpend": 2545
+      },
+      {
+        "year": 8,
+        "profit": 3918807,
+        "cash": 19525644,
+        "sales": 39926850,
+        "attraction": 1.8011484536781524,
+        "loyalty": 0.6632476190476193,
+        "averageSpend": 2463
+      },
+      {
+        "year": 9,
+        "profit": 4741181,
+        "cash": 24600465,
+        "sales": 41799360,
+        "attraction": 1.7840899166341861,
+        "loyalty": 0.6101047619047619,
+        "averageSpend": 2437
+      },
+      {
+        "year": 10,
+        "profit": 4213140,
+        "cash": 28161066,
+        "sales": 36363010,
+        "attraction": 1.8068342742559225,
+        "loyalty": 0.5861047619047618,
+        "averageSpend": 2481
+      }
+    ],
+    "investments": [
+      {
+        "turn": 37,
+        "equipment": "freezer",
+        "loan": 930000,
+        "rate": 2,
+        "months": 60,
+        "score": 94
+      },
+      {
+        "turn": 49,
+        "equipment": "warehouse",
+        "loan": 3000000,
+        "rate": 2,
+        "months": 120,
+        "score": 95
+      },
+      {
+        "turn": 73,
+        "equipment": "tank",
+        "loan": 2500000,
+        "rate": 2,
+        "months": 60,
+        "score": 100
+      },
+      {
+        "turn": 85,
+        "equipment": "fixture",
+        "loan": 1500000,
+        "rate": 2,
+        "months": 72,
+        "score": 100
+      }
+    ],
+    "loans": [
+      {
+        "kind": "equipment",
+        "account": "長期借入金",
+        "amount": 930000,
+        "balance": 0,
+        "rate": 2,
+        "months": 60,
+        "due": 97,
+        "start": 37,
+        "payment": 15500
+      },
+      {
+        "kind": "equipment",
+        "account": "長期借入金",
+        "amount": 3000000,
+        "balance": 1225000,
+        "rate": 2,
+        "months": 120,
+        "due": 169,
+        "start": 49,
+        "payment": 25000
+      },
+      {
+        "kind": "equipment",
+        "account": "長期借入金",
+        "amount": 2500000,
+        "balance": 541651,
+        "rate": 2,
+        "months": 60,
+        "due": 133,
+        "start": 73,
+        "payment": 41667
+      },
+      {
+        "kind": "equipment",
+        "account": "長期借入金",
+        "amount": 1500000,
+        "balance": 770810,
+        "rate": 2,
+        "months": 72,
+        "due": 157,
+        "start": 85,
+        "payment": 20834
+      }
+    ],
+    "audits": 4,
+    "staffEvents": [
+      {
+        "id": "offer-staff-1",
+        "staffId": "staff-1",
+        "type": "offer",
+        "turn": 107,
+        "deadline": 109,
+        "status": "expired",
+        "notified": false
+      },
+      {
+        "id": "left-staff-1",
+        "staffId": "staff-1",
+        "type": "departure",
+        "turn": 109,
+        "status": "completed",
+        "notified": false
+      }
+    ],
+    "additionalTax": 39600
+  },
+  {
+    "policy": "expansionPromote",
+    "seed": 73129,
+    "stopTurn": 120,
+    "survived": true,
+    "minCash": 5642539,
+    "annual": [
+      {
+        "year": 1,
+        "profit": -1794365,
+        "cash": 6719199,
+        "sales": 15847850,
+        "attraction": 0.8427000000000001,
+        "loyalty": 0,
+        "averageSpend": 2030
+      },
+      {
+        "year": 2,
+        "profit": -619560,
+        "cash": 6617631,
+        "sales": 18677900,
+        "attraction": 1.3845000000000007,
+        "loyalty": 0,
+        "averageSpend": 1977
+      },
+      {
+        "year": 3,
+        "profit": 374415,
+        "cash": 7348058,
+        "sales": 21050550,
+        "attraction": 1.7671499999999998,
+        "loyalty": 0.18919999999999998,
+        "averageSpend": 2014
+      },
+      {
+        "year": 4,
+        "profit": 717600,
+        "cash": 7714790,
+        "sales": 22577800,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.32153333333333334,
+        "averageSpend": 2166
+      },
+      {
+        "year": 5,
+        "profit": 976167,
+        "cash": 8759060,
+        "sales": 24651250,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.4795333333333335,
+        "averageSpend": 2448
+      },
+      {
+        "year": 6,
+        "profit": 2174465,
+        "cash": 12200922,
+        "sales": 31809800,
+        "attraction": 1.8359999999999999,
+        "loyalty": 0.6775333333333337,
+        "averageSpend": 2463
+      },
+      {
+        "year": 7,
+        "profit": 2788782,
+        "cash": 14596413,
+        "sales": 35867380,
+        "attraction": 1.8242464340724354,
+        "loyalty": 0.6858190476190479,
+        "averageSpend": 2545
+      },
+      {
+        "year": 8,
+        "profit": 3918807,
+        "cash": 19525644,
+        "sales": 39926850,
+        "attraction": 1.8011484536781524,
+        "loyalty": 0.6632476190476193,
+        "averageSpend": 2463
+      },
+      {
+        "year": 9,
+        "profit": 4542123,
+        "cash": 24287399,
+        "sales": 41923840,
+        "attraction": 1.8612862812139843,
+        "loyalty": 0.6118190476190476,
+        "averageSpend": 2466
+      },
+      {
+        "year": 10,
+        "profit": 3388474,
+        "cash": 27197820,
+        "sales": 41978710,
+        "attraction": 1.8612862812139843,
+        "loyalty": 0.5603904761904759,
+        "averageSpend": 2454
+      }
+    ],
+    "investments": [
+      {
+        "turn": 37,
+        "equipment": "freezer",
+        "loan": 930000,
+        "rate": 2,
+        "months": 60,
+        "score": 94
+      },
+      {
+        "turn": 49,
+        "equipment": "warehouse",
+        "loan": 3000000,
+        "rate": 2,
+        "months": 120,
+        "score": 95
+      },
+      {
+        "turn": 73,
+        "equipment": "tank",
+        "loan": 2500000,
+        "rate": 2,
+        "months": 60,
+        "score": 100
+      },
+      {
+        "turn": 85,
+        "equipment": "fixture",
+        "loan": 1500000,
+        "rate": 2,
+        "months": 72,
+        "score": 100
+      }
+    ],
+    "loans": [
+      {
+        "kind": "equipment",
+        "account": "長期借入金",
+        "amount": 930000,
+        "balance": 0,
+        "rate": 2,
+        "months": 60,
+        "due": 97,
+        "start": 37,
+        "payment": 15500
+      },
+      {
+        "kind": "equipment",
+        "account": "長期借入金",
+        "amount": 3000000,
+        "balance": 1225000,
+        "rate": 2,
+        "months": 120,
+        "due": 169,
+        "start": 49,
+        "payment": 25000
+      },
+      {
+        "kind": "equipment",
+        "account": "長期借入金",
+        "amount": 2500000,
+        "balance": 541651,
+        "rate": 2,
+        "months": 60,
+        "due": 133,
+        "start": 73,
+        "payment": 41667
+      },
+      {
+        "kind": "equipment",
+        "account": "長期借入金",
+        "amount": 1500000,
+        "balance": 770810,
+        "rate": 2,
+        "months": 72,
+        "due": 157,
+        "start": 85,
+        "payment": 20834
+      }
+    ],
+    "audits": 4,
+    "staffEvents": [
+      {
+        "id": "offer-staff-1",
+        "staffId": "staff-1",
+        "type": "offer",
+        "turn": 107,
+        "deadline": 109,
+        "status": "accepted",
+        "notified": true
+      },
+      {
+        "id": "promoted-staff-1",
+        "staffId": "staff-1",
+        "type": "promotion",
+        "turn": 107,
+        "status": "completed",
+        "notified": true
+      }
+    ],
+    "additionalTax": 39600
+  }
+]

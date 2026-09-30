@@ -1,0 +1,310 @@
+[
+  {
+    "policy": "steady",
+    "runs": 5,
+    "survived": 5,
+    "stopRange": [
+      120,
+      120
+    ],
+    "annualMedian": [
+      {
+        "year": 1,
+        "n": 5,
+        "profit": -1720395,
+        "cash": 6923017,
+        "sales": 16021400,
+        "loyalty": 0
+      },
+      {
+        "year": 2,
+        "n": 5,
+        "profit": -481520,
+        "cash": 6849652,
+        "sales": 19040150,
+        "loyalty": 0
+      },
+      {
+        "year": 3,
+        "n": 5,
+        "profit": 376615,
+        "cash": 7675036,
+        "sales": 21050550,
+        "loyalty": 0.18919999999999998
+      },
+      {
+        "year": 4,
+        "n": 5,
+        "profit": 434155,
+        "cash": 8300941,
+        "sales": 21156100,
+        "loyalty": 0.35200000000000004
+      },
+      {
+        "year": 5,
+        "n": 5,
+        "profit": 556136,
+        "cash": 9036791,
+        "sales": 21535450,
+        "loyalty": 0.5148
+      },
+      {
+        "year": 6,
+        "n": 5,
+        "profit": 819648,
+        "cash": 9963869,
+        "sales": 22140400,
+        "loyalty": 0.6551999999999997
+      },
+      {
+        "year": 7,
+        "n": 5,
+        "profit": 575458,
+        "cash": 10540892,
+        "sales": 21685300,
+        "loyalty": 0.6611999999999995
+      },
+      {
+        "year": 8,
+        "n": 5,
+        "profit": 563923,
+        "cash": 11130799,
+        "sales": 21648900,
+        "loyalty": 0.6447999999999993
+      },
+      {
+        "year": 9,
+        "n": 5,
+        "profit": 590949,
+        "cash": 11727244,
+        "sales": 21769600,
+        "loyalty": 0.650799999999999
+      },
+      {
+        "year": 10,
+        "n": 5,
+        "profit": 556127,
+        "cash": 12290872,
+        "sales": 21655200,
+        "loyalty": 0.6567999999999988
+      }
+    ]
+  },
+  {
+    "policy": "neglect",
+    "runs": 5,
+    "survived": 0,
+    "stopRange": [
+      51,
+      51
+    ],
+    "annualMedian": [
+      {
+        "year": 1,
+        "n": 5,
+        "profit": -1677040,
+        "cash": 6972644,
+        "sales": 15982250,
+        "loyalty": 0
+      },
+      {
+        "year": 2,
+        "n": 5,
+        "profit": -1649300,
+        "cash": 5676384,
+        "sales": 16047050,
+        "loyalty": 0
+      },
+      {
+        "year": 3,
+        "n": 5,
+        "profit": -1833785,
+        "cash": 4033481,
+        "sales": 15615100,
+        "loyalty": 0
+      },
+      {
+        "year": 4,
+        "n": 5,
+        "profit": -3011920,
+        "cash": 1262370,
+        "sales": 12842750,
+        "loyalty": 0
+      }
+    ]
+  },
+  {
+    "policy": "stopAfter3",
+    "runs": 5,
+    "survived": 0,
+    "stopRange": [
+      115,
+      117
+    ],
+    "annualMedian": [
+      {
+        "year": 1,
+        "n": 5,
+        "profit": -1720395,
+        "cash": 6923017,
+        "sales": 16021400,
+        "loyalty": 0
+      },
+      {
+        "year": 2,
+        "n": 5,
+        "profit": -481520,
+        "cash": 6849652,
+        "sales": 19040150,
+        "loyalty": 0
+      },
+      {
+        "year": 3,
+        "n": 5,
+        "profit": 376615,
+        "cash": 7675036,
+        "sales": 21050550,
+        "loyalty": 0.18919999999999998
+      },
+      {
+        "year": 4,
+        "n": 5,
+        "profit": 560775,
+        "cash": 8438710,
+        "sales": 21307000,
+        "loyalty": 0.25799999999999995
+      },
+      {
+        "year": 5,
+        "n": 5,
+        "profit": 364746,
+        "cash": 9001745,
+        "sales": 20873650,
+        "loyalty": 0.04200000000000002
+      },
+      {
+        "year": 6,
+        "n": 5,
+        "profit": 151370,
+        "cash": 9059468,
+        "sales": 19819350,
+        "loyalty": 0
+      },
+      {
+        "year": 7,
+        "n": 5,
+        "profit": -348875,
+        "cash": 8580270,
+        "sales": 18531000,
+        "loyalty": 0
+      },
+      {
+        "year": 8,
+        "n": 5,
+        "profit": -1658370,
+        "cash": 7073016,
+        "sales": 15463650,
+        "loyalty": 0
+      },
+      {
+        "year": 9,
+        "n": 5,
+        "profit": -3558085,
+        "cash": 3336292,
+        "sales": 10975150,
+        "loyalty": 0
+      }
+    ]
+  },
+  {
+    "policy": "expansion",
+    "runs": 5,
+    "survived": 5,
+    "stopRange": [
+      120,
+      120
+    ],
+    "annualMedian": [
+      {
+        "year": 1,
+        "n": 5,
+        "profit": -1720395,
+        "cash": 6923017,
+        "sales": 16021400,
+        "loyalty": 0
+      },
+      {
+        "year": 2,
+        "n": 5,
+        "profit": -481520,
+        "cash": 6849652,
+        "sales": 19040150,
+        "loyalty": 0
+      },
+      {
+        "year": 3,
+        "n": 5,
+        "profit": 376615,
+        "cash": 7675036,
+        "sales": 21050550,
+        "loyalty": 0.18919999999999998
+      },
+      {
+        "year": 4,
+        "n": 5,
+        "profit": 717434,
+        "cash": 8348773,
+        "sales": 22577800,
+        "loyalty": 0.32153333333333334
+      },
+      {
+        "year": 5,
+        "n": 5,
+        "profit": 919627,
+        "cash": 9309293,
+        "sales": 24646750,
+        "loyalty": 0.4795333333333335
+      },
+      {
+        "year": 6,
+        "n": 5,
+        "profit": 2176807,
+        "cash": 12484760,
+        "sales": 31814850,
+        "loyalty": 0.6775333333333337
+      },
+      {
+        "year": 7,
+        "n": 5,
+        "profit": 2730548,
+        "cash": 14849096,
+        "sales": 35616240,
+        "loyalty": 0.6772476190476193
+      },
+      {
+        "year": 8,
+        "n": 5,
+        "profit": 3899486,
+        "cash": 19683628,
+        "sales": 39868290,
+        "loyalty": 0.6512476190476192
+      },
+      {
+        "year": 9,
+        "n": 5,
+        "profit": 4737482,
+        "cash": 24732547,
+        "sales": 41764520,
+        "loyalty": 0.6015333333333331
+      },
+      {
+        "year": 10,
+        "n": 5,
+        "profit": 4687151,
+        "cash": 29274949,
+        "sales": 41559430,
+        "loyalty": 0.548390476190476
+      }
+    ]
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "policy": "steady",
+    "runs": 20,
+    "survived": 20,
+    "stopRange": [
+      120,
+      120
+    ],
+    "annualMedian": [
+      {
+        "year": 1,
+        "n": 20,
+        "profit": -1663505,
+        "cash": 6962234,
+        "sales": 16154400,
+        "loyalty": 0,
+        "averageSpend": 2016
+      },
+      {
+        "year": 2,
+        "n": 20,
+        "profit": -515190,
+        "cash": 6866261,
+        "sales": 18924000,
+        "loyalty": 0,
+        "averageSpend": 1977
+      },
+      {
+        "year": 3,
+        "n": 20,
+        "profit": 247183,
+        "cash": 7597982,
+        "sales": 20995000,
+        "loyalty": 0.18919999999999998,
+        "averageSpend": 2014
+      },
+      {
+        "year": 4,
+        "n": 20,
+        "profit": 339395,
+        "cash": 8166088,
+        "sales": 21254200,
+        "loyalty": 0.35200000000000004,
+        "averageSpend": 1952
+      },
+      {
+        "year": 5,
+        "n": 20,
+        "profit": 386016,
+        "cash": 8789338,
+        "sales": 21493200,
+        "loyalty": 0.5148,
+        "averageSpend": 2046
+      },
+      {
+        "year": 6,
+        "n": 20,
+        "profit": 692012,
+        "cash": 9549538,
+        "sales": 22082550,
+        "loyalty": 0.6551999999999997,
+        "averageSpend": 2001
+      },
+      {
+        "year": 7,
+        "n": 20,
+        "profit": 561587,
+        "cash": 10068572,
+        "sales": 21674450,
+        "loyalty": 0.6611999999999995,
+        "averageSpend": 2001
+      },
+      {
+        "year": 8,
+        "n": 20,
+        "profit": 572585,
+        "cash": 10637307,
+        "sales": 21693350,
+        "loyalty": 0.6447999999999993,
+        "averageSpend": 2002
+      },
+      {
+        "year": 9,
+        "n": 20,
+        "profit": 570508,
+        "cash": 11222433,
+        "sales": 21687100,
+        "loyalty": 0.650799999999999,
+        "averageSpend": 2000
+      },
+      {
+        "year": 10,
+        "n": 20,
+        "profit": 574097,
+        "cash": 11791355,
+        "sales": 21680900,
+        "loyalty": 0.6567999999999988,
+        "averageSpend": 2000
+      }
+    ],
+    "exampleInvestments": []
+  },
+  {
+    "policy": "neglect",
+    "runs": 20,
+    "survived": 0,
+    "stopRange": [
+      50,
+      52
+    ],
+    "annualMedian": [
+      {
+        "year": 1,
+        "n": 20,
+        "profit": -1618795,
+        "cash": 7015600,
+        "sales": 16118750,
+        "loyalty": 0,
+        "averageSpend": 2021
+      },
+      {
+        "year": 2,
+        "n": 20,
+        "profit": -1649300,
+        "cash": 5702983,
+        "sales": 16047050,
+        "loyalty": 0,
+        "averageSpend": 2020
+      },
+      {
+        "year": 3,
+        "n": 20,
+        "profit": -1924370,
+        "cash": 4057675,
+        "sales": 15403350,
+        "loyalty": 0,
+        "averageSpend": 2038
+      },
+      {
+        "year": 4,
+        "n": 20,
+        "profit": -2884560,
+        "cash": 1369617,
+        "sales": 13152250,
+        "loyalty": 0,
+        "averageSpend": 2063
+      }
+    ],
+    "exampleInvestments": []
+  },
+  {
+    "policy": "stopAfter3",
+    "runs": 20,
+    "survived": 0,
+    "stopRange": [
+      114,
+      116
+    ],
+    "annualMedian": [
+      {
+        "year": 1,
+        "n": 20,
+        "profit": -1663505,
+        "cash": 6962234,
+        "sales": 16154400,
+        "loyalty": 0,
+        "averageSpend": 2016
+      },
+      {
+        "year": 2,
+        "n": 20,
+        "profit": -515190,
+        "cash": 6866261,
+        "sales": 18924000,
+        "loyalty": 0,
+        "averageSpend": 1977
+      },
+      {
+        "year": 3,
+        "n": 20,
+        "profit": 247183,
+        "cash": 7597982,
+        "sales": 20995000,
+        "loyalty": 0.18919999999999998,
+        "averageSpend": 2014
+      },
+      {
+        "year": 4,
+        "n": 20,
+        "profit": 434458,
+        "cash": 8303857,
+        "sales": 21405000,
+        "loyalty": 0.25799999999999995,
+        "averageSpend": 1948
+      },
+      {
+        "year": 5,
+        "n": 20,
+        "profit": 241251,
+        "cash": 8717499,
+        "sales": 20827450,
+        "loyalty": 0.04200000000000002,
+        "averageSpend": 1992
+      },
+      {
+        "year": 6,
+        "n": 20,
+        "profit": 100667,
+        "cash": 8698232,
+        "sales": 19796850,
+        "loyalty": 0,
+        "averageSpend": 1982
+      },
+      {
+        "year": 7,
+        "n": 20,
+        "profit": -393815,
+        "cash": 8287309,
+        "sales": 18464500,
+        "loyalty": 0,
+        "averageSpend": 2011
+      },
+      {
+        "year": 8,
+        "n": 20,
+        "profit": -1652215,
+        "cash": 6637003,
+        "sales": 15478800,
+        "loyalty": 0,
+        "averageSpend": 2056
+      },
+      {
+        "year": 9,
+        "n": 20,
+        "profit": -3613595,
+        "cash": 2845275,
+        "sales": 10844600,
+        "loyalty": 0,
+        "averageSpend": 1893
+      }
+    ],
+    "exampleInvestments": []
+  },
+  {
+    "policy": "expansion",
+    "runs": 20,
+    "survived": 20,
+    "stopRange": [
+      120,
+      120
+    ],
+    "annualMedian": [
+      {
+        "year": 1,
+        "n": 20,
+        "profit": -1663505,
+        "cash": 6962234,
+        "sales": 16154400,
+        "loyalty": 0,
+        "averageSpend": 2016
+      },
+      {
+        "year": 2,
+        "n": 20,
+        "profit": -515190,
+        "cash": 6866261,
+        "sales": 18924000,
+        "loyalty": 0,
+        "averageSpend": 1977
+      },
+      {
+        "year": 3,
+        "n": 20,
+        "profit": 247183,
+        "cash": 7597982,
+        "sales": 20995000,
+        "loyalty": 0.18919999999999998,
+        "averageSpend": 2014
+      },
+      {
+        "year": 4,
+        "n": 20,
+        "profit": 528476,
+        "cash": 8111345,
+        "sales": 22613250,
+        "loyalty": 0.32153333333333334,
+        "averageSpend": 2166
+      },
+      {
+        "year": 5,
+        "n": 20,
+        "profit": 724653,
+        "cash": 8862744,
+        "sales": 24607650,
+        "loyalty": 0.4795333333333335,
+        "averageSpend": 2448
+      },
+      {
+        "year": 6,
+        "n": 20,
+        "profit": 2176807,
+        "cash": 11965958,
+        "sales": 31826600,
+        "loyalty": 0.6775333333333337,
+        "averageSpend": 2463
+      },
+      {
+        "year": 7,
+        "n": 20,
+        "profit": 2725352,
+        "cash": 14308628,
+        "sales": 35599410,
+        "loyalty": 0.678961904761905,
+        "averageSpend": 2543
+      },
+      {
+        "year": 8,
+        "n": 20,
+        "profit": 3902185,
+        "cash": 19201372,
+        "sales": 39874440,
+        "loyalty": 0.652961904761905,
+        "averageSpend": 2451
+      },
+      {
+        "year": 9,
+        "n": 20,
+        "profit": 4733820,
+        "cash": 24267052,
+        "sales": 41754840,
+        "loyalty": 0.6015333333333334,
+        "averageSpend": 2440
+      },
+      {
+        "year": 10,
+        "n": 20,
+        "profit": 4687174,
+        "cash": 28859442,
+        "sales": 41560420,
+        "loyalty": 0.5501047619047618,
+        "averageSpend": 2428
+      }
+    ],
+    "exampleInvestments": [
+      {
+        "turn": 37,
+        "equipment": "freezer",
+        "loan": 940000,
+        "rate": 2,
+        "months": 60,
+        "score": 94
+      },
+      {
+        "turn": 49,
+        "equipment": "warehouse",
+        "loan": 3000000,
+        "rate": 2,
+        "months": 120,
+        "score": 95
+      },
+      {
+        "turn": 73,
+        "equipment": "tank",
+        "loan": 2500000,
+        "rate": 2,
+        "months": 60,
+        "score": 100
+      },
+      {
+        "turn": 85,
+        "equipment": "fixture",
+        "loan": 1500000,
+        "rate": 2,
+        "months": 72,
+        "score": 100
+      }
+    ]
+  }
+]

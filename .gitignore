@@ -1,0 +1,11 @@
+node_modules/
+dist/server/
+dist/.openai/
+.sites-runtime/
+.cloudflare/
+.wrangler/
+.dev.vars*
+.env*
+
+.npm-cache/
+.*.log

@@ -1,0 +1,20 @@
+{
+  "name": "que-finance-game",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-cloudflare.cjs",
+    "db:generate": "drizzle-kit generate",
+    "test": "node --test tests/*.test.cjs",
+    "build:cloudflare": "node scripts/build-cloudflare.cjs",
+    "dev:cloudflare": "npm run build:cloudflare && wrangler d1 migrations apply DB --local --config .cloudflare/wrangler.local.json && wrangler dev --config .cloudflare/wrangler.local.json --ip 127.0.0.1 --inspector-port 0",
+    "deploy:cloudflare": "npm run build:cloudflare && node scripts/configure-cloudflare.cjs && wrangler d1 migrations apply DB --remote --config .cloudflare/wrangler.json && wrangler deploy --config .cloudflare/wrangler.json",
+    "test:cloudflare": "npm run build:cloudflare && wrangler d1 migrations apply DB --local --config .cloudflare/wrangler.local.json && node scripts/smoke-cloudflare.cjs",
+    "test:ui": "node tests/ui-smoke.cjs"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.11",
+    "drizzle-orm": "0.44.7",
+    "jsdom": "30.1.1",
+    "wrangler": "4.143.1"
+  }
+}
