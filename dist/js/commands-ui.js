@@ -30,9 +30,9 @@ const renderBeforeCommands=renderPlanning;
 renderPlanning=function(){renderBeforeCommands();propertyCommand.hidden=!Expansion.propertyUnlocked(state);
  const hiring=el('hireStaff'),event=E.recruitment(state);
  if(hiring){hiring.disabled=hiring.disabled||!event.open;hiring.querySelector('small').textContent=event.first?'最初の１人はいつでも募集可能':event.open?'今月は応募あり！採用できるのは今月だけ':'応募待ち（約５か月に１回）';}
- let notice=el('recruitmentNotice');if(!notice){notice=document.createElement('p');notice.id='recruitmentNotice';el('actions').after(notice);}
+ let notice=el('recruitmentNotice');if(!notice){notice=document.createElement('p');notice.id='recruitmentNotice';el('commit').after(notice);}
  notice.textContent=event.first?'最初の１人はいつでも採用できます。候補はランダムです。':event.open?'今月は応募があります：店舗スタッフ・漁業人員を採用できるのは今月だけです。':'今月は応募なし。次の応募がいつ来るかはわかりません（約５か月に１回）。';
- let promotions=el('promotionSchedule');if(!promotions){promotions=document.createElement('details');promotions.id='promotionSchedule';el('actions').after(promotions);}
+ let promotions=el('promotionSchedule');if(!promotions){promotions=document.createElement('details');promotions.id='promotionSchedule';el('commit').after(promotions);}
  const campaigns=(state.marketing||[]).filter(x=>x.end>=state.turn);
  promotions.innerHTML='<summary>販促の効果と残り期間</summary>'+ (campaigns.map(x=>{const age=state.turn-x.start,weight=x.kind==='campaign'?([1,1,2/3,1/3][age]||0):age>=0?1:0;return `<p>${x.kind==='seasonal'?'セールの再来店効果':x.kind==='gradual'?'旧セーブの販促':'販促・協賛'}：${age<0?`${x.start-state.turn}か月後から有効`:`現在 ${Math.round(weight*100)}％・今月を含め残り${x.end-state.turn+1}か月`} ／ ${turnName(x.start)}〜${turnName(x.end)}</p>`;}).join('')||'<p>予定・継続中の販促効果はありません。</p>')+'<p>割合は広告の最大効果に対する残り具合で、売上の増加率ではありません。実行月０、翌月・翌々月100％、３か月後67％、４か月後33％、５か月後０。接客で蓄積する認知・常連化は別です。</p>';
 };
