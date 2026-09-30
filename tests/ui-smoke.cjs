@@ -1,5 +1,6 @@
 const assert=require('node:assert/strict');
-const {bootDOM}=require('./helpers/dom.cjs');
+const {bootDOM:bootWithWelcome}=require('./helpers/dom.cjs');
+function bootDOM(saved){const ui=bootWithWelcome(saved);ui.click('#welcomeStart');return ui;}
 let ui=bootDOM();
 try {
  ui.click('#skipIntro');
