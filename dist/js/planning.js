@@ -8,7 +8,7 @@ function simulate(source,plan={},noise=1){let s=structuredClone(source);if(s.clo
  }
  if(plan.hire&&plan.hire!=='none'&&!hired&&i>=(plan.delay||0)+1&&!s.actionLocked&&E.recruitment(s).open){s=E.hire(s,plan.hire);hired=true;}
  const desiredAction=plan.effort==='quarterly'&&[8,11].includes((s.turn-1)%12+1)?'improve':'tend',action=s.actionLocked||desiredAction;
- const q=E.recommend(s,action,plan.price||'list');const result=E.run(s,q,plan.price||'list',action,{noise});s=result.state;const r=result.report;
+ const q=E.recommend(s,action,plan.price||'list',plan.payment||'legacy');const result=E.run(s,q,plan.price||'list',action,{noise,payment:plan.payment||'legacy'});s=result.state;const r=result.report;
  rows.push({turn:s.turn,cash:s.balances.預金,profit:r.monthProfit,sales:(r.after.売上高||0)-(r.before.売上高||0),inventory:s.balances.商品,waste:r.waste,repayment:r.debtService.principal,interest:r.debtService.interest,tax:r.tax.paid+r.consumption.paid,refund:r.consumption.refund,ended:!!s.ended});
  if(s.ended||s.turn===120)break;s=E.next(E.compact(s)||s);
  }return {status:rows.some(r=>r.ended)?'insolvent':rows.length<requestedMonths?'horizon':'completed',reason:rows.some(r=>r.ended)?(s.balances.預金<0?'会社預金が不足しました。':'個人生活費が不足しました。'):null,requestedMonths,actualMonths:rows.length,endTurn:rows.at(-1)?.turn??start,stopTurn:rows.some(r=>r.ended)?rows.at(-1).turn:null,start,rows,profit:rows.reduce((n,r)=>n+r.profit,0),minimumCash:rows.length?Math.min(...rows.map(r=>r.cash)):source.balances.預金,endCash:rows.at(-1)?.cash??source.balances.預金,ended:rows.some(r=>r.ended)};
@@ -36,8 +36,8 @@ function simulateStaff(source,staffId,policy,plan={},noise=1){
     else events.push({turn:s.turn,type:'hireDelayed'});
    }
    const desired=plan.effort==='sales'?(E.sponsorEvent(s)?'sales':'improve'):(plan.effort||'maintain')==='maintain'&&[8,11].includes((s.turn-1)%12+1)?'improve':'tend';
-   const action=s.actionLocked||desired,payroll=E.payroll(s)+E.staffSocial(s),q=E.recommend(s,action,plan.price||'list');
-   const r=E.run(s,q,plan.price||'list',action,{noise});s=r.state;
+   const action=s.actionLocked||desired,payroll=E.payroll(s)+E.staffSocial(s),q=E.recommend(s,action,plan.price||'list',plan.payment||'legacy');
+   const r=E.run(s,q,plan.price||'list',action,{noise,payment:plan.payment||'legacy'});s=r.state;
    rows.push({turn:s.turn,cash:s.balances.預金,profit:r.report.monthProfit,sales:r.report.productResults.reduce((n,p)=>n+p.sales,0),payroll,service:E.limits(s,action).service,served:r.report.served,visitors:r.report.visitors,action,tax:r.report.tax.paid+r.report.consumption.paid,principal:r.report.debtService.principal,role:s.staff.find(x=>x.id===staffId)?.role||(replaced?'external':'departed')});
    if(s.ended)return result('insolvent',s.balances.預金<0?'会社預金が不足':'個人の生活費が不足');
    if(i===11||s.turn===120)break;

@@ -106,17 +106,17 @@ function install(E){
   return {profitability:Math.round(profitability),health:Math.round(health),wealth:Math.round(wealth),wealthBefore:Math.round(before),total:Math.round(profitability)+Math.round(health)+Math.round(wealth),personal,sale,ordinary,totalOrdinary,assets:m.assets,equity:m.equity,debtYears,fundingYears};
  }
  function forecastExpansion(source,plan,a,months=12,stress=false){let s=clone(source);init(s);if(s.closed)s=E.next(s);const rows=[];try{if(plan.kind==='property')s=buyProperty(s,plan.id,plan.amount,a);if(plan.kind==='fishery')s=buyFishery(s,plan.amount,a);if(stress){for(const p of s.expansion.properties)p.occupancy=Math.max(.3,p.occupancy-.2);if(s.expansion.fishery)s.expansion.fishery.forecastCatchScale=.75;for(const l of s.loans||[])l.rate+=1;}for(let i=0;i<months&&!s.ended&&s.turn<=120;i++){if(plan.kind==='fishery'&&i>0&&s.expansion.fishery.crew.length<3&&!s.actionLocked&&E.recruitment(s).open)s=hireCrew(s,s.expansion.fishery.crew.some(x=>x.role==='captain')?'crew':'captain');const action=s.actionLocked||'tend',r=E.run(s,E.recommend(s,action),'list',action,{noise:1});s=r.state;rows.push({turn:s.turn,cash:s.balances.預金,profit:r.report.monthProfit,segments:r.report.segments});if(s.ended||s.turn===120)break;s=E.next(E.compact(s));}return {rows,ended:s.ended,profit:sum(rows,r=>r.profit),minimumCash:rows.length?Math.min(...rows.map(r=>r.cash)):s.balances.預金,endCash:rows.at(-1)?.cash};}catch(e){return {rows,error:e.message};}}
- function cruise(source,quantities,price,months){let s=clone(source);init(s);available(s);if(month(s.turn)!==4||![12,24,36].includes(months))fail('巡航は４月に12・24・36か月から選びます。');const rows=[],start=s.turn;let report=null,reason='指定期間を終了';
+ function cruise(source,quantities,price,months,payment='legacy'){let s=clone(source);init(s);available(s);if(month(s.turn)!==4||![12,24,36].includes(months))fail('巡航は４月に12・24・36か月から選びます。');const rows=[],start=s.turn;let report=null,reason='指定期間を終了';
   for(let i=0;i<months;i++){
    // Exact fixed order quantities, same engine; no manual tax commands carried forward.
    if(s.expansion.taxPolicy)s.expansion.taxPolicy={year:year(s.turn),careful:!!s.expansion.taxPolicy.careful,commands:[]};
-   const action=s.actionLocked||'tend',validation=E.validation(s,quantities,action);if(validation){reason=validation;break;}
-   const r=E.run(s,quantities,price,action);s=r.state;report=r.report;rows.push({turn:s.turn,cash:s.balances.預金,profit:report.monthProfit});
+   const action=s.actionLocked||'tend',validation=E.validation(s,quantities,action,payment);if(validation){reason=validation;break;}
+   const r=E.run(s,quantities,price,action,{payment});s=r.state;report=r.report;rows.push({turn:s.turn,cash:s.balances.預金,profit:report.monthProfit});
    if(s.ended){reason='資金不足';break;}if(s.turn===120){reason='第10期決算・M&A判定';break;}if(report.audit){reason='税務調査';break;}if(report.expansionEvents?.some(e=>e.type==='storm'||e.type==='repair')){reason='天候・修繕イベント';break;}
    if(report.staffHints?.length){reason='クエがスタッフの得意分野に気づいた';break;}
    const n=E.next(E.compact(s));if(!E.recruitment(n).first&&E.recruitment(n).open){reason='翌月は採用イベント';break;}if(n.staffEvents?.some(e=>!e.notified)){reason='スタッフの相談・退職';break;}if(n.turn>=25&&(n.turn-25)%6===0){reason='新しい物件の案内';break;}
    if(n.loans?.some(l=>l.kind==='short'&&l.balance>0&&l.due-n.turn<=1)){reason='短期借入の書換判断';break;}
-   let look=clone(n),danger=false;for(let j=0;j<2;j++){try{const lookAction=look.actionLocked||'tend',lr=E.run(look,quantities,price,lookAction,{noise:1});if(lr.state.ended||lr.state.balances.預金<E.fixedCosts(look)*2+extraFixed(look)*2){danger=true;break;}if(look.turn===120)break;look=E.next(E.compact(lr.state));}catch{danger=true;break;}}
+   let look=clone(n),danger=false;for(let j=0;j<2;j++){try{const lookAction=look.actionLocked||'tend',lr=E.run(look,quantities,price,lookAction,{noise:1,payment});if(lr.state.ended||lr.state.balances.預金<E.fixedCosts(look)*2+extraFixed(look)*2){danger=true;break;}if(look.turn===120)break;look=E.next(E.compact(lr.state));}catch{danger=true;break;}}
    if(danger){reason='２か月以内の資金余力を確認';break;}if(i===months-1)break;s=n;
   }
   return {state:s,report,rows,start,reason};
@@ -135,7 +135,7 @@ function install(E){
   s.pendingEntries.push(...s.entries.slice(begin));log(s,'taxPolicy',{commands,careful});E.assertState(s);return s;
  }
  function setSalary(source,amount){const s=clone(source);available(s);if(month(s.turn)!==4||!Number.isSafeInteger(amount)||amount%1000!==0||amount<120000||amount>1000000||s.expansion.salarySetYear===year(s.turn))fail('役員報酬は期首に１回、月12万〜100万円、千円単位で選びます。');s.officerSalary=amount;s.expansion.salarySetYear=year(s.turn);log(s,'salary',{amount});return s;}
- function disposeStock(source,index,quantity){const s=clone(source);available(s);const p=E.PRODUCTS[index];if(!p||!Number.isSafeInteger(quantity)||quantity<=0||quantity>s.inventory[index])fail('実在する商品の処分数量を選んでください。');E.take(s,index,quantity);const e=post(s,'商品廃棄損','商品',quantity*p.cost,p.name+'の売れ残り処分','waste.manual','retail');s.pendingEntries.push(e);log(s,'dispose',{index,quantity});E.assertState(s);return s;}
+ function disposeStock(source,index,quantity){const s=clone(source);available(s);const p=E.PRODUCTS[index];if(!p||!Number.isSafeInteger(quantity)||quantity<=0||quantity>s.inventory[index])fail('実在する商品の処分数量を選んでください。');const amount=E.take(s,index,quantity);const e=post(s,'商品廃棄損','商品',amount,p.name+'の売れ残り処分','waste.manual','retail');s.pendingEntries.push(e);log(s,'dispose',{index,quantity});E.assertState(s);return s;}
  function livingCharge(source){const s=clone(source);available(s);if(s.owner>=200000||s.expansion.livingTurn===s.turn||s.balances.預金<100000)fail('個人預金が生活費１か月未満の月に１回選べます。');const e=post(s,'雑費','預金',100000,'生活費の会社負担（ゲームの選択）','taxChoice');s.owner+=100000;s.pendingEntries.push(e);s.expansion.livingTurn=s.turn;s.expansion.cheatUses=(s.expansion.cheatUses||0)+1;evidence(s,'living',100000,0,100000);log(s,'livingCharge');E.assertState(s);return s;}
  function taxMonthly(s){
   const x=s.expansion,policy=x.taxPolicy,commands=policy?.year===year(s.turn)?policy.commands:[];

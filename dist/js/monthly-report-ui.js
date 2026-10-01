@@ -64,13 +64,13 @@ const planningBeforeSalesCheck=renderPlanning;
 renderPlanning=function(){
  planningBeforeSalesCheck();
  if(state.closed)return;
- const action=currentAction(),forecast=E.forecast(state,choice.quantities,choice.price,action);
+ const action=currentAction(),forecast=E.forecast(state,choice.quantities,choice.price,action,choice.payment||'cash');
  el('staffAdvice').textContent=`経営者１人・従業員${state.staff.length}人。`+sellingExplanation(action,forecast);
 };
 const monthBeforeSalesCheck=closeMonth;
 closeMonth=function(confirmed=false,allowZeroSales=false){
  if(!confirmed&&!allowZeroSales&&!state.closed&&!state.ended){
-  const action=currentAction(),forecast=E.forecast(state,choice.quantities,choice.price,action);
+  const action=currentAction(),forecast=E.forecast(state,choice.quantities,choice.price,action,choice.payment||'cash');
   if(forecast&&forecast.products.every(p=>!p?.quantity)){
    openShop('この内容では販売が見込めません',`<p>${sellingExplanation(action,forecast)}</p><p>このまま確定すると１か月進み、給与・家賃・販促費などの支払いは発生します。</p><button id="replanCash">仕入・人員・行動を見直す</button><button id="confirmZeroSalesMonth">確認して、この内容で月を確定する</button>`);
    return;

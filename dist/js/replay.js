@@ -7,7 +7,7 @@ function settings(source,values){const s=structuredClone(source);if(!values||Obj
 E.playerSettings=settings;
 function apply(s,command){if(!command||typeof command!=='object'||!Array.isArray(command.args)||command.args.length>5)throw Error('操作記録が不正です');const a=command.args,assessment=()=>U.assess(s);let state=s,report=null;
  switch(command.op){
- case 'run':if(!['list','plus10','minus10','sale'].includes(a[1])||!['tend','improve','sales',s.actionLocked].includes(a[2])||a.length!==3)throw Error('月次の条件が不正です');({state,report}=E.run(s,...a));break;
+ case 'run':if(!['list','plus10','minus10','sale'].includes(a[1])||!['tend','improve','sales',s.actionLocked].includes(a[2])||![3,4].includes(a.length)||a.length===4&&(!a[3]||Object.keys(a[3]).length!==1||!['cash','credit'].includes(a[3].payment)))throw Error('月次の条件が不正です');({state,report}=E.run(s,...a));break;
  case 'next':if(!s.closed||s.ended||s.turn>=120)throw Error('翌月へ進めません');state=E.next(E.compact(s));break;
  case 'rescueOwner':state=E.rescueOwner(s,a[0]);break;
  case 'rescueBank':state=E.rescueBank(s,a[0],a[1]);break;
@@ -40,17 +40,17 @@ function apply(s,command){if(!command||typeof command!=='object'||!Array.isArray
  case 'living':state=X.livingCharge(s);break;
  case 'finding':state=X.resolveFinding(s,a[0],a[1]);break;
  case 'ma':state=X.negotiate(s,a[0],a[1]);break;
- case 'cruise':if(a.length!==3||!['list','plus10','minus10','sale'].includes(a[1]))throw Error('巡航条件が不正です');({state,report}=X.cruise(s,a[0],a[1],a[2]));break;
+ case 'cruise':if(![3,4].includes(a.length)||a.length===4&&!['cash','credit'].includes(a[3])||!['list','plus10','minus10','sale'].includes(a[1]))throw Error('巡航条件が不正です');({state,report}=X.cruise(s,...a));break;
  default:throw Error('対応していない操作です');
  }
  E.assertState(state);return {state,report};
 }
 function installRecording(){let depth=0;const wrap=(object,key,op,map=a=>a,resultState=r=>r)=>{const fn=object[key];object[key]=function(source,...args){const outer=depth===0;depth++;let r;try{r=fn(source,...args);}finally{depth--;}const n=resultState(r);if(outer&&source?.replay&&n&&n!==source){n.replay={...source.replay,ops:[...source.replay.ops,{op,args:structuredClone(map(args))}]};}return r;};};
  for(const [key,op] of [['rescueOwner','rescueOwner'],['rescueBank','rescueBank'],['abandonRescue','rescueAbandon'],['next','next'],['playerSettings','settings'],['buy','buy'],['hire','hire'],['consultBank','consultBank'],['promoteStaff','promote'],['deferStaff','deferStaff'],['lendByOwner','ownerFund'],['repayToOwner','ownerRepay'],['resolveTaxEvidence','evidence']])wrap(E,key,op);
- wrap(E,'run','run',a=>a.slice(0,3),r=>r.state);
+ wrap(E,'run','run',a=>a[3]?.payment? [...a.slice(0,3),{payment:a[3].payment}]:a.slice(0,3),r=>r.state);
  wrap(B,'execute','bankLoan',a=>a.slice(1,3));wrap(B,'renew','renew',a=>a[2]===undefined?[a[1]]:[a[1],a[2]]);
  for(const [key,op] of [['promoteCaptain','promoteCaptain'],['setBoatUse','boatUse'],['transferStaff','transfer'],['cutWage','cutWage'],['restoreWage','restoreWage'],['exitBusiness','exitBusiness'],['hireCrew','crew'],['setFishing','fishing'],['setSupply','supply'],['chooseTaxPolicy','taxPolicy'],['setSalary','salary'],['disposeStock','dispose'],['livingCharge','living'],['resolveFinding','finding'],['negotiate','ma']])wrap(X,key,op);
- wrap(X,'buyProperty','property',a=>a.slice(0,2));wrap(X,'buyFishery','fishery',a=>a.slice(0,1));wrap(X,'cruise','cruise',a=>a.slice(0,3),r=>r.state);
+ wrap(X,'buyProperty','property',a=>a.slice(0,2));wrap(X,'buyFishery','fishery',a=>a.slice(0,1));wrap(X,'cruise','cruise',a=>a.slice(0,4),r=>r.state);
 }
 function snapshot(s){const score=X.score(s);return {score,balances:s.balances,segments:X.segments(s,109,120).rows,years:s.history.filter(h=>h.turn%12===0).slice(-3).map(h=>({year:h.turn/12,balances:h.balances})),business:{properties:s.expansion.properties.map(p=>({name:p.name,age:p.age,price:p.price})),fishery:!!s.expansion.fishery,staff:s.staff.length},ma:s.expansion.ma?.phase||'ineligible'};}
 const api={VERSION,create,apply,installRecording,snapshot};root.ShopReplay=api;if(typeof module!=='undefined')module.exports=api;

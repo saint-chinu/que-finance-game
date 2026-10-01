@@ -22,7 +22,7 @@ function validate(payload){
   if(!integer(s.owner,-Number.MAX_SAFE_INTEGER)||!Number.isFinite(s.attraction)||s.attraction<0||s.attraction>10||!integer(s.rng,0,4294967295))fail();
   for(const k of Object.keys(s.equipment||{}))if(!E.EQUIPMENT[k])fail();
   if(!s.equipment||s.staff.some(x=>!E.ROLES[x.role]||x.role==='que'||x.characterId!=null&&!Object.hasOwn(E.STAFF_CHARACTERS,x.characterId)&&x.characterId!=='madai'||!integer(x.hiredTurn,1,s.turn)))fail();
-  s.lots.forEach((lots,i)=>{if(!integer(s.inventory[i])||!Array.isArray(lots)||lots.some(l=>!integer(l.quantity)||!integer(l.turn,1,s.turn)))fail();});
+  s.lots.forEach((lots,i)=>{if(!integer(s.inventory[i])||!Array.isArray(lots)||lots.some(l=>!integer(l.quantity)||!integer(l.turn,1,s.turn)||l.amount!==undefined&&!integer(l.amount)))fail();});
   if(s.assets.some(a=>!integer(a.cost)||!integer(a.life,1,1200)||!integer(a.depreciation,0,a.cost)))fail();
   if(s.receivables.some(r=>!integer(r.amount)||!integer(r.due,1,240)))fail();
   if((s.loans||[]).some(l=>!integer(l.balance)||!integer(l.amount,l.balance)||!integer(l.months,1,l.kind==='property'?300:120)||!integer(l.start,1,s.turn)||!integer(l.payment)||!Number.isFinite(l.rate)||l.rate<=0||!['short','equipment','startup','property','fishery'].includes(l.kind)))fail();
@@ -32,7 +32,7 @@ function validate(payload){
   for(const e of [...s.entries,...s.pendingEntries])validEntry(e);
   let last=0;for(const h of s.history){if(h.turn!==last+1)fail();last=h.turn;balances(h.balances);}
   if(last!==(s.closed?s.turn:s.turn-1))fail();
-  const c=p.choice;if(!c||!Array.isArray(c.quantities)||c.quantities.length!==E.PRODUCTS.length||c.quantities.some(n=>!integer(n,0,100000))||!['list','plus10','minus10','sale'].includes(c.price)||!['tend','improve','sales','hire','bank','investment','fixture'].includes(c.action))fail();
+  const c=p.choice;if(!c||c.payment!==undefined&&!['cash','credit'].includes(c.payment)||c.creditExplained!==undefined&&typeof c.creditExplained!=='boolean'||!Array.isArray(c.quantities)||c.quantities.length!==E.PRODUCTS.length||c.quantities.some(n=>!integer(n,0,100000))||!['list','plus10','minus10','sale'].includes(c.price)||!['tend','improve','sales','hire','bank','investment','fixture'].includes(c.action))fail();
   if(!Array.isArray(p.seen)||p.seen.some(x=>typeof x!=='string'))fail();
   if(p.animationQueue!==undefined&&!Array.isArray(p.animationQueue))fail();
   for(const e of p.animationQueue||[]){if(e.tutorialGroup){if(!Array.isArray(e.entries)||typeof e.memo!=='string')fail();e.entries.forEach(validEntry);}else validEntry(e);balances(e.before);balances(e.after);}
