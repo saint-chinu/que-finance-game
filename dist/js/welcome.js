@@ -21,11 +21,12 @@
   dialog.showModal();dialog.scrollTop=0;document.getElementById('welcomeTitle').focus();
  }
  function restoreFocus(){
+  if(offerAnnualSalaryReview())return;
   if(!opening){const target=returnFocus?.closest('.command-menu')?.querySelector('summary')||returnFocus;if(target?.isConnected)target.focus();return;}
   const target=!document.getElementById('transactionOverlay').hidden?document.getElementById('transactionNext'):introComplete?document.querySelector('.command-menu summary'):document.getElementById('introNext');
   target?.focus();
  }
- start.addEventListener('click',()=>{if(opening&&!introComplete){try{state=E.extension.setSalary(state,readStartingSalary('welcomeSalary'));renderPlanning();}catch(error){toast(error.message);return;}}dialog.close();});
+ start.addEventListener('click',()=>{if(opening&&!introComplete){try{state=E.extension.setSalary(state,readStartingSalary('welcomeSalary'));renderPlanning();}catch(error){toast(error.message);return;}}dialog.close();offerAnnualSalaryReview();});
  dialog.addEventListener('cancel',event=>{if(opening&&!introComplete)event.preventDefault();});
  dialog.addEventListener('close',restoreFocus);
  const menu=document.createElement('button');menu.type='button';menu.id='welcomeMenu';menu.className='help-top';menu.textContent='遊び方・免責事項';menu.addEventListener('click',()=>show());document.querySelector('.command-menu-list').append(menu);
