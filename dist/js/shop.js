@@ -12,6 +12,8 @@ const yen=n=>Math.round(n).toLocaleString('ja-JP')+'円';
 const icon=(id,cls='')=>id==='fixture'?'<span class="equipment-emoji" aria-hidden="true">🛠️</span>':`<img class="equipment-icon ${cls}" src="assets/equipment/${id}.png" alt="">`;
 const productIcon=p=>p.id==='aji'?icon('aji','product-image'):`<span class="product-emoji" aria-hidden="true">${p.icon}</span>`;
 function currentAction(){return state.actionLocked||choice.action;}
+function startingSalaryOptions(id){return `<fieldset id="${id}" class="starting-salary"><legend>社長の役員報酬（月額）</legend><p>会社から社長へ、毎月払う金額を選びます。</p><div class="starting-salary-options">${[20,25,30].map(n=>`<label><input type="radio" name="${id}" aria-label="${n}万円（手取り${n*.8}万円）" value="${n*10000}" ${n===30?'checked':''}><span><b>${n}万円</b><small>手取り ${n*.8}万円</small></span></label>`).join('')}</div><p class="starting-salary-note">ゲーム内の手取りは報酬の80%、生活費は月20万円。20万円を選ぶと毎月4万円不足し、会社から借りる形になります。報酬は次の4月に見直せます。</p></fieldset>`;}
+function readStartingSalary(id){const amount=Number(document.querySelector(`#${id} input:checked`)?.value);if(![200000,250000,300000].includes(amount))throw Error('役員報酬を20万・25万・30万円から選んでください。');return amount;}
 function toast(message){let t=el('shopToast');if(!t){t=document.createElement('p');t.id='shopToast';t.setAttribute('role','status');document.body.append(t);}t.textContent=message;t.hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.hidden=true,5000);}
 function openShop(title,body){dialogReturn=document.activeElement;el('shopDialogTitle').textContent=title;el('shopDialogBody').innerHTML=body;if(!el('shopDialog').open)el('shopDialog').showModal();el('closeShopDialog').focus();}
 function showNewGameConfirmation(){
