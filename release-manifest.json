@@ -30,7 +30,7 @@
     "dist/js/bank-ui.js": "bf70fbab08bf253a72de91664e4c1559abd37a79f77c34d7b872ce63a1c05f97",
     "dist/js/bank.js": "e4e145f37f4989abe520b9e653836154b059427920c4c15eb898e1216300405c",
     "dist/js/commands-ui.js": "886a3399a33d7bc08904e70348c68977df5bb8b66f0e71bb85f790e37a015c3b",
-    "dist/js/completion-ui.js": "18d4fefeb83088aaa9ee89cc9804d0d91b627d6c6603852bebc88154f2e335b9",
+    "dist/js/completion-ui.js": "bb06d1e934404b0d323dffaadb6916d7efeac2c4d8ef835cb00d697ff06c3098",
     "dist/js/engine.js": "0d4d9b3ba27d6d5567d7fd15ce52862ad04273def6396c8a86e55fce1e7aeea5",
     "dist/js/expansion-engine.js": "a4277b529a611c7788b91c45ef940cf945883341b90d7e420aeff76c732d4019",
     "dist/js/expansion-ui.js": "1a96905099375ee82717c00745046eac52720502ded87fb25d65ba311d843463",
@@ -48,10 +48,10 @@
     "dist/js/rescue-ui.js": "3f14c8879e398da0973ef22627ab946343e38f700a5c7ce1644b155ae8f41957",
     "dist/js/rescue.js": "281ee9faa2d518450324c5d5be7dfa160a948fb3e61d036da19e41585f5bd160",
     "dist/js/review-ui.js": "186809c8da0b2e657576de4fe11b8349701ee73f20b167adb3bc426ff268df98",
-    "dist/js/shop.js": "f5b7feb1bd8f65b5d731abc4e110670b1cd7989a69be9c91570a1f277ea5eefc",
+    "dist/js/shop.js": "4ffa56ec237a2e05f06bee33623709bbe23799e2b21439e472446b16bbf28e53",
     "dist/js/staff-tax-ui.js": "9980c1941ba67c9c095346f68a82defd93fcb435222eba7e4355f9f95631f43f",
     "dist/js/underwriting.js": "6750c8bea74cbb36dbf24f4efdcbdafa208c857bfb676d0c485f4569ef155d1a",
-    "dist/shop.css": "6d285bdfdba722e4e6b1836089341fe0a4c8a16ec6fd884004960cdd5e51363a",
+    "dist/shop.css": "443da0a4aa9a2a8d1aa275acea9feb379cf6bf1d9f0367f489c194fc76ef4194",
     "docs/BALANCE_V4.md": "77738184631873acd26ef24d4cea1957d38851be0a148079de71347bab1becf1",
     "docs/BANK_CHOICES.md": "99d3fa61e5031a6870b0829772de474c4168eb196211609f400db1fae65f5f68",
     "docs/BANK_RULES.md": "64b2b70eac6753f275a21e0957c723b69eb4123c53d735ddf4e896627138df86",
@@ -149,8 +149,9 @@
     "wrangler.template.json": "1ef858e3b95fcd5503b2b6b2fec5fffa341f31208d521a15661f1389f2968ca2",
     "dist/js/audio.js": "84a3e4de6a28ac53ce3e4f7486d7117251549adb821897eed0862fb1eff5afa2",
     "tests/audio.test.cjs": "7441b7a4786934b6a7cf5ce7d20a90aedb5ef5c208f94975e850bf2f70468a4b",
-    "dist/js/welcome.js": "ccd06a3d25dc7b42c7bcb8ce7cbbdbbdd61b3499aaec67498419c4acde1248ff",
+    "dist/js/welcome.js": "f8a3f292b83b1fa7efdc65a3a1e69cc38932fc0dbacea4aa23bc3d9504da8928",
     "tests/welcome.test.cjs": "2d6f9cdd89243455fdbfaee2856251d66a6d79754e1c101c99784f2663c6887e",
-    "tests/menu-navigation.test.cjs": "6006e034c52fb6a6ff3b3b610fbe8f0ef1a047b6099d4521c893df9facee6fe0"
+    "tests/menu-navigation.test.cjs": "6006e034c52fb6a6ff3b3b610fbe8f0ef1a047b6099d4521c893df9facee6fe0",
+    "tests/new-game.test.cjs": "9879b7cfa723461029b4526241e8531c189cd510c79ce7a3e369e326ed9ddd9d"
   }
 }

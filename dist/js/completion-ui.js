@@ -42,7 +42,7 @@ function downloadBackup(payload){
 }
 function showBackup(){
  pendingRestore=null;restoreReadId++;
- openShop('セーブのバックアップ・復元',`<p>自動セーブはこのブラウザに保存されます。JSONファイルをダウンロードして保管すれば、別の端末でも続きを再開できます。</p><button id="downloadBackup" ${introComplete?'':'disabled'}>現在のセーブをダウンロード</button><p>ファイルには帳簿・仕訳・在庫・借入・選択中の仕入・学習の進み具合が入ります。</p><label class="backup-picker">バックアップから復元 <input id="restoreFile" type="file" accept=".json,application/json"></label><div id="restorePreview" role="status" aria-live="polite"></div>${priorRestoreData()?'<button id="downloadRollback">前回の復元直前のセーブをダウンロード</button>':''}<p>復元前に年月と残高を確認します。復元直前のセーブも、このブラウザに１世代保管します。</p>`);
+ openShop('セーブのバックアップ・復元',`<p>自動セーブはこのブラウザに保存されます。JSONファイルをダウンロードして保管すれば、別の端末でも続きを再開できます。</p><button id="downloadBackup" ${introComplete?'':'disabled'}>現在のセーブをダウンロード</button><p>ファイルには帳簿・仕訳・在庫・借入・選択中の仕入・学習の進み具合が入ります。</p><label class="backup-picker">バックアップから復元 <input id="restoreFile" type="file" accept=".json,application/json"></label><div id="restorePreview" role="status" aria-live="polite"></div>${priorRestoreData()?'<button id="downloadRollback">前回のやり直し・復元前のセーブをダウンロード</button>':''}<p>復元前に年月と残高を確認します。やり直し・復元直前のセーブも、このブラウザに１世代保管します。</p>`);
 }
 function stageRestore(text){
  pendingRestore=null;const payload=Backup.decode(text);pendingRestore=payload;
