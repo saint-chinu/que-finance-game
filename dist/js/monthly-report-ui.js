@@ -23,7 +23,12 @@ renderReport=function(){
  try{reportBeforeDisclosure();}finally{renderingCompactReport=false;}
  const r=statementReport;
  const sales=r.productResults?r.productResults.reduce((n,p)=>n+(p?.sales||0),0):(r.entries||[]).filter(e=>e.credit==='売上高'&&(!e.segmentId||e.segmentId==='retail')).reduce((n,e)=>n+e.amount,0);
- el('reportQuickSummary').innerHTML=r.provisional?'<p>今月は未確定です。試算表・決算書から現在の帳簿を確認できます。</p>':`<span>釣具店売上（税抜）<b>${yen(sales)}</b></span><span>今月の損益<b>${fmt(r.monthProfit)}</b></span><span>月末預金<b>${fmt(r.after.預金)}</b></span>`;
+ el('reportQuickSummary').innerHTML=r.provisional?'<p>今月は未確定です。試算表・決算書から現在の帳簿を確認できます。</p>':`<span>釣具店売上（税抜）<b>${fmt(sales)}</b></span><span>今月の損益<b>${fmt(r.monthProfit)}</b></span><span>月末預金<b>${fmt(r.after.預金)}</b></span>`;
+ if(!r.provisional){
+  const b=plForTurns(r.turn,r.turn),revenue=b.売上高||0,cost=b.売上原価||0,gross=revenue-cost,profit=E.profit(b);
+  el('reportQuickSummary').innerHTML+='<section class="monthly-pl-summary"><h2>今月のP/L要約 <small>全社・単位：千円</small></h2><dl>'+[['売上高',revenue],['売上原価',cost],['売上総利益（粗利）',gross],['その他の費用等（収益差引）',gross-profit],['当期純利益',profit]].map(([label,value])=>'<div><dt>'+label+'</dt><dd>'+amountText(value)+'</dd></div>').join('')+'</dl><p>その他の費用等は、給与・家賃・利息・税金などから、売上以外の収益を差し引いた額です。詳細は下のP/Lで確認できます。</p></section>';
+  el('reportTitle').textContent='第'+r.fy+'期 '+r.month+'月の月次報告';
+ }
  if(!r.provisional&&sales===0){
   const reason=r.served===0?'店番による接客がなく、今月は販売していません。':'接客はできましたが、在庫と商品ごとの需要が合わず、販売数量が０でした。仕入内容を確認してください。';
   el('reportQuickSummary').innerHTML+=`<p class="sales-zero-note">${reason}</p>`;
@@ -55,6 +60,7 @@ function sellingExplanation(action,forecast){
  const operator=action==='tend'?'クエが店番':action==='improve'?'クエが短縮営業で接客・改善':['bank','investment'].includes(action)?'クエが手続きの合間に短縮営業（接客力65％）':state.staff.length?'従業員が店番':'店番なし・休業';
  let text=`${operator}。接客力目安 ${service.toLocaleString()}人／月（需要・在庫により販売人数は変わります）。`;
  if(forecast)text+=` 売上見込み（税抜）${yen(sales)}。`;
+ if(state.storeDutyTurn===state.turn)text+=' 船と店の配置で店員が0人のため、クエは店番に固定されています。船員を1人店に回すと、採用・集客投資・銀行相談を選べます。';
  if(service===0)text+=' 社長が店外へ出る月は、店番のスタッフが必要です。';
  else if(forecast&&sales===0)text+=' 店番はできますが、販売できる在庫・需要がありません。仕入内容を確認してください。';
  else if(action==='sales')text+=' 大会の準備でクエの接客は８割です。協賛の集客効果は翌月から４か月維持、その後減衰して６か月で消えます。';

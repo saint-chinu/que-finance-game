@@ -53,5 +53,7 @@ function installRecording(){let depth=0;const wrap=(object,key,op,map=a=>a,resul
  wrap(X,'buyProperty','property',a=>a.slice(0,2));wrap(X,'buyFishery','fishery',a=>a.slice(0,1));wrap(X,'cruise','cruise',a=>a.slice(0,4),r=>r.state);
 }
 function snapshot(s){const score=X.score(s);return {score,balances:s.balances,segments:X.segments(s,109,120).rows,years:s.history.filter(h=>h.turn%12===0).slice(-3).map(h=>({year:h.turn/12,balances:h.balances})),business:{properties:s.expansion.properties.map(p=>({name:p.name,age:p.age,price:p.price})),fishery:!!s.expansion.fishery,staff:s.staff.length},ma:s.expansion.ma?.phase||'ineligible'};}
-const api={VERSION,create,apply,installRecording,snapshot};root.ShopReplay=api;if(typeof module!=='undefined')module.exports=api;
+// Old published snapshots retain the inputs needed to apply the current scoring rubric.
+function rescoreSnapshot(source){const snapshot=structuredClone(source),score=snapshot.score;if(!score)return snapshot;const years=snapshot.years||[],sales=Number.isFinite(score.sales)?score.sales:years.reduce((n,y)=>n+(y.balances.売上高||0),0)/(years.length||1);const profitability=X.profitabilityScore({...score,sales});snapshot.score={...score,model:X.SCORE_MODEL,sales,profitability,total:profitability+score.health+score.wealth};return snapshot;}
+const api={VERSION,create,apply,installRecording,snapshot,rescoreSnapshot};root.ShopReplay=api;if(typeof module!=='undefined')module.exports=api;
 })(globalThis);

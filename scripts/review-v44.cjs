@@ -26,6 +26,7 @@ const P=[
  {id:'R19',name:'不動産（最高利回り）',effort:Y,property:'yield'},
  {id:'R20',name:'不動産（最高利回り）＋資金が細ったら撤退',effort:Y,property:'yield',exit:true},
  {id:'R21',name:'毎年ごまかし（売上抜き・期ズレ）',effort:Y,cheat:['skim','defer']},
+ {id:'R23',name:'設備拡大＋協賛募集をすべて受ける',effort:Y,equipment:true,hire:'parttime',hireAt:25,promote:true,allSponsors:true},
  {id:'R22',name:'設備拡大＋漁業＋報酬18万',effort:Y,equipment:true,fish:true,salary:180000},
 ];
 const log=(ops,t,type,x={})=>ops.push({turn:t,type,...x});
@@ -38,6 +39,7 @@ function simulate(seed,p){
    
    if(p.cheat){try{s=X.chooseTaxPolicy(s,p.cheat,false);log(ops,t,'cheat');}catch(e){}}}
   let action=(p.effort==='monthly'||p.effort.includes(m))?(p.sales&&E.sponsorEvent(s)?'sales':'improve'):'tend';
+  if(p.allSponsors&&E.sponsorEvent(s))action='sales';
   for(const e of s.staffEvents||[])if(p.promote&&e.type==='offer'&&e.status==='pending'){s=E.promoteStaff(s,e.staffId);log(ops,t,'promotion');}
   // 短期の期日：同額更新、だめなら枠まで減額
   (s.loans||[]).forEach((l,i)=>{if(l.kind==='short'&&l.balance>0&&t>=(l.due||l.start+l.months)-1&&t<=(l.due||l.start+l.months)&&!s.expansion._renewed?.[i+':'+t]){
@@ -67,11 +69,11 @@ function simulate(seed,p){
    }
   }
   action=s.actionLocked||action;if(action!=='tend'&&action!=='improve')lostShop++;
-  let quantities=E.recommend(s,action,price);
-  if(p.overstock&&m>=3&&m<=8){const target=quantities.map(n=>n*2);for(let i=0;i<target.length;i++){let low=quantities[i],high=target[i];while(low<high){const mid=Math.ceil((low+high)/2),q=quantities.slice();q[i]=mid;if(E.validation(s,q,action))high=mid-1;else low=mid;}quantities[i]=low;}}
-  if(E.validation(s,quantities,action)){let lo=0,hi=1;for(let k=0;k<20;k++){const mid=(lo+hi)/2,q=quantities.map(n=>Math.floor(n*mid));if(E.validation(s,q,action))hi=mid;else lo=mid;}quantities=quantities.map(n=>Math.floor(n*lo));if(E.validation(s,quantities,action)){quantities=quantities.map(()=>0);}shortBuy++;}
-  if(E.validation(s,quantities,action)&&action!=='tend'){action='tend';}
-  const result=E.run(s,quantities,price,action);s=result.state;const r=result.report;
+  let quantities=E.recommend(s,action,price,p.payment||process.env.PAY||'cash');
+  if(p.overstock&&m>=3&&m<=8){const target=quantities.map(n=>n*2);for(let i=0;i<target.length;i++){let low=quantities[i],high=target[i];while(low<high){const mid=Math.ceil((low+high)/2),q=quantities.slice();q[i]=mid;if(E.validation(s,q,action,p.payment||process.env.PAY||'cash'))high=mid-1;else low=mid;}quantities[i]=low;}}
+  if(E.validation(s,quantities,action,p.payment||process.env.PAY||'cash')){let lo=0,hi=1;for(let k=0;k<20;k++){const mid=(lo+hi)/2,q=quantities.map(n=>Math.floor(n*mid));if(E.validation(s,q,action,p.payment||process.env.PAY||'cash'))hi=mid;else lo=mid;}quantities=quantities.map(n=>Math.floor(n*lo));if(E.validation(s,quantities,action,p.payment||process.env.PAY||'cash')){quantities=quantities.map(()=>0);}shortBuy++;}
+  if(E.validation(s,quantities,action,p.payment||process.env.PAY||'cash')&&action!=='tend'){action='tend';}
+  const result=E.run(s,quantities,price,action,{payment:p.payment||process.env.PAY||'cash'});s=result.state;const r=result.report;
   E.assertState(s);
   monthly.push({turn:t,profit:r.monthProfit,cash:s.balances.預金,owner:s.owner,action,staff:s.staff.length,waste:r.waste});
   // 最後の資金繰り

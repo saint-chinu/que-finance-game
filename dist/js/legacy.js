@@ -162,8 +162,9 @@ function transactionAccountingLesson(entries,b){
 }
 function renderAccountingGuide(r){
  const period=tab==='pl-month'?'month':tab==='pl'?'cumulative':r?.annual||tab==='trend'?'year':'month';
+ const entries=r?.entries||[],topic=entries.some(e=>e.type?.startsWith('bankBorrow.'))?'borrowing':entries.some(e=>e.credit==='売掛金'&&e.debit==='預金')?'collection':entries.some(e=>e.type?.startsWith('waste.'))?'waste':'pl';
  const more=['inventory','collection','borrowing','repayment','waste','yearClose','vat','owner','tax','reading'];
- el('accountingBasicsBody').innerHTML=queAccountingLesson('tb')+queAccountingLesson('bs')+queAccountingLesson('pl',null,period)+more.map(kind=>`<details><summary>${{inventory:'仕入と売上原価',collection:'売掛金の回収',borrowing:'銀行から借りる',repayment:'元金と利息',waste:'在庫の廃棄',yearClose:'決算と翌期への繰越',vat:'消費税',owner:'社長と会社の貸し借り',tax:'法人税等の計上と納付',reading:'帳票の区分・増減・自己資本'}[kind]}</summary>${queAccountingLesson(kind)}</details>`).join('');
+ el('accountingBasicsBody').innerHTML=['tb','bs','pl'].map(kind=>`<details ${kind===topic?'open':''}><summary>${{tb:'試算表とは',bs:'B/S：資産・負債・純資産',pl:'P/L：売上から利益まで'}[kind]}</summary>${queAccountingLesson(kind,null,period)}</details>`).join('')+more.map(kind=>`<details ${kind===topic?'open':''}><summary>${{inventory:'仕入と売上原価',collection:'売掛金の回収',borrowing:'銀行から借りる',repayment:'元金と利息',waste:'在庫の廃棄',yearClose:'決算と翌期への繰越',vat:'消費税',owner:'社長と会社の貸し借り',tax:'法人税等の計上と納付',reading:'帳票の区分・増減・自己資本'}[kind]}</summary>${queAccountingLesson(kind)}</details>`).join('');
  const meaning=el('statementMeaning');meaning.hidden=!r;
  if(!r)return;
  const point=`<strong>基準日</strong>・第${r.fy}期 ${r.month}月${r.provisional?'の現在':'末'}`;

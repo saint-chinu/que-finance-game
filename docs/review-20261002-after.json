@@ -1,0 +1,4895 @@
+{
+ "seeds": [
+  73129,
+  91,
+  202609,
+  5,
+  777
+ ],
+ "policies": [
+  {
+   "id": "R01",
+   "name": "店番だけ（営業しない）"
+  },
+  {
+   "id": "R02",
+   "name": "標準：年3回改善"
+  },
+  {
+   "id": "R03",
+   "name": "毎月改善"
+  },
+  {
+   "id": "R04",
+   "name": "年3回の大会協賛"
+  },
+  {
+   "id": "R05",
+   "name": "報酬12万・生活費は会社から借りる"
+  },
+  {
+   "id": "R06",
+   "name": "報酬18万（節約）＋年3回"
+  },
+  {
+   "id": "R07",
+   "name": "役員報酬50万で個人に抜く＋年3回"
+  },
+  {
+   "id": "R08",
+   "name": "創業からバイト＋年3回"
+  },
+  {
+   "id": "R09",
+   "name": "3年目バイト→内部登用"
+  },
+  {
+   "id": "R10",
+   "name": "夏秋の仕入を倍増"
+  },
+  {
+   "id": "R11",
+   "name": "常時1割値引き"
+  },
+  {
+   "id": "R12",
+   "name": "常時1割値上げ"
+  },
+  {
+   "id": "R13",
+   "name": "設備拡大（融資）＋バイト"
+  },
+  {
+   "id": "R14",
+   "name": "漁業へ多角化"
+  },
+  {
+   "id": "R15",
+   "name": "漁業＋冬は休業・船員を店へ"
+  },
+  {
+   "id": "R16",
+   "name": "漁業＋資金が細ったら撤退"
+  },
+  {
+   "id": "R17",
+   "name": "釣船"
+  },
+  {
+   "id": "R18",
+   "name": "釣船＋冬は休業・船員を店へ"
+  },
+  {
+   "id": "R19",
+   "name": "不動産（最高利回り）"
+  },
+  {
+   "id": "R20",
+   "name": "不動産（最高利回り）＋資金が細ったら撤退"
+  },
+  {
+   "id": "R21",
+   "name": "毎年ごまかし（売上抜き・期ズレ）"
+  },
+  {
+   "id": "R23",
+   "name": "設備拡大＋協賛募集をすべて受ける"
+  },
+  {
+   "id": "R22",
+   "name": "設備拡大＋漁業＋報酬18万"
+  }
+ ],
+ "results": [
+  {
+   "seed": 73129,
+   "id": "R01",
+   "name": "店番だけ（営業しない）",
+   "turn": 56,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -1587654,
+     "cash": 6960036,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1438772,
+     "cash": 6041863,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1659604,
+     "cash": 4580575,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -2867208,
+     "cash": 1889825,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": -180243,
+   "owner": 0,
+   "equity": -1912088,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 4,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 53,
+     "type": "crisis",
+     "need": 323303
+    },
+    {
+     "turn": 53,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 54,
+     "type": "crisis",
+     "need": 691940
+    },
+    {
+     "turn": 54,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 55,
+     "type": "crisis",
+     "need": 702500
+    },
+    {
+     "turn": 55,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 56,
+     "type": "crisis",
+     "need": 702500
+    },
+    {
+     "turn": 56,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 91,
+   "id": "R01",
+   "name": "店番だけ（営業しない）",
+   "turn": 57,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -1540415,
+     "cash": 7011999,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1296992,
+     "cash": 6214881,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1777418,
+     "cash": 4692440,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -2836681,
+     "cash": 2018744,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": -332262,
+   "owner": 0,
+   "equity": -2127399,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 4,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 49,
+     "status": "reviewed",
+     "add": 11000
+    }
+   ],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 54,
+     "type": "crisis",
+     "need": 516642
+    },
+    {
+     "turn": 54,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 55,
+     "type": "crisis",
+     "need": 691940
+    },
+    {
+     "turn": 55,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 56,
+     "type": "crisis",
+     "need": 701180
+    },
+    {
+     "turn": 56,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 57,
+     "type": "crisis",
+     "need": 702500
+    },
+    {
+     "turn": 57,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 202609,
+   "id": "R01",
+   "name": "店番だけ（営業しない）",
+   "turn": 59,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -1292399,
+     "cash": 7399019,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1361345,
+     "cash": 6421937,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1707518,
+     "cash": 4967658,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -2652733,
+     "cash": 2483537,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": -410716,
+   "owner": 0,
+   "equity": -2331437,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 5,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 55,
+     "status": "reviewed",
+     "add": 13200
+    }
+   ],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 55,
+     "type": "crisis",
+     "need": 59056
+    },
+    {
+     "turn": 55,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 56,
+     "type": "crisis",
+     "need": 601520
+    },
+    {
+     "turn": 56,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 57,
+     "type": "crisis",
+     "need": 711740
+    },
+    {
+     "turn": 57,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 58,
+     "type": "crisis",
+     "need": 699860
+    },
+    {
+     "turn": 58,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 59,
+     "type": "crisis",
+     "need": 698540
+    },
+    {
+     "turn": 59,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 5,
+   "id": "R01",
+   "name": "店番だけ（営業しない）",
+   "turn": 56,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -1436029,
+     "cash": 7249694,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1554794,
+     "cash": 5949679,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1833584,
+     "cash": 4531237,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -2746302,
+     "cash": 1861704,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": -108234,
+   "owner": 0,
+   "equity": -1849965,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 4,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 52,
+     "status": "reviewed",
+     "add": 6600
+    }
+   ],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 53,
+     "type": "crisis",
+     "need": 244694
+    },
+    {
+     "turn": 53,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 54,
+     "type": "crisis",
+     "need": 698540
+    },
+    {
+     "turn": 54,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 55,
+     "type": "crisis",
+     "need": 702500
+    },
+    {
+     "turn": 55,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 56,
+     "type": "crisis",
+     "need": 702500
+    },
+    {
+     "turn": 56,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 777,
+   "id": "R01",
+   "name": "店番だけ（営業しない）",
+   "turn": 56,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -1600417,
+     "cash": 7079361,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1441672,
+     "cash": 5911144,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1936405,
+     "cash": 4365646,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -2595243,
+     "cash": 1879876,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": -152074,
+   "owner": 0,
+   "equity": -1897690,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 4,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 53,
+     "status": "reviewed",
+     "add": 11000
+    }
+   ],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 53,
+     "type": "crisis",
+     "need": 285454
+    },
+    {
+     "turn": 53,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 54,
+     "type": "crisis",
+     "need": 691940
+    },
+    {
+     "turn": 54,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 55,
+     "type": "crisis",
+     "need": 712180
+    },
+    {
+     "turn": 55,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 56,
+     "type": "crisis",
+     "need": 702500
+    },
+    {
+     "turn": 56,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 73129,
+   "id": "R02",
+   "name": "標準：年3回改善",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 128,
+   "score": 128,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20728766.666666668,
+    "profitability": 23,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 128,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 637577,
+    "totalOrdinary": 3414006,
+    "assets": 12492946,
+    "equity": 11787232,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1193909,
+     "cash": 7375443,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -15338,
+     "cash": 7892810,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 307269,
+     "cash": 8483640,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 272999,
+     "cash": 8941639,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 385402,
+     "cash": 9637272,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 469703,
+     "cash": 10156767,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 387631,
+     "cash": 10510937,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 404993,
+     "cash": 10924032,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 432693,
+     "cash": 11369652,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 335789,
+     "cash": 11692561,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 11692561,
+   "owner": 4800000,
+   "equity": 11787232,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 57,
+     "status": "reviewed",
+     "add": 8800
+    },
+    {
+     "turn": 109,
+     "status": "reviewed",
+     "add": 30800
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 38500
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 91,
+   "id": "R02",
+   "name": "標準：年3回改善",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 128,
+   "score": 128,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20704716.666666668,
+    "profitability": 23,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 128,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 627040.6666666666,
+    "totalOrdinary": 3459449,
+    "assets": 12505073,
+    "equity": 11815763,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1123660,
+     "cash": 7452719,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 119034,
+     "cash": 8111579,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 244019,
+     "cash": 8618325,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 265208,
+     "cash": 9074171,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 281573,
+     "cash": 9675639,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 471027,
+     "cash": 10188487,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 408795,
+     "cash": 10573052,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 435063,
+     "cash": 11020374,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 375568,
+     "cash": 11386145,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 339136,
+     "cash": 11704688,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 11704688,
+   "owner": 4800000,
+   "equity": 11815763,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 49,
+     "status": "reviewed",
+     "add": 11000
+    },
+    {
+     "turn": 103,
+     "status": "reviewed",
+     "add": 38500
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 30800
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 202609,
+   "id": "R02",
+   "name": "標準：年3回改善",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 130,
+   "score": 130,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20728250,
+    "profitability": 25,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 130,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 638171.3333333334,
+    "totalOrdinary": 3894536,
+    "assets": 12845884,
+    "equity": 12141454,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -953735,
+     "cash": 7660778,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 148005,
+     "cash": 8303346,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 295394,
+     "cash": 8873700,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 308828,
+     "cash": 9401500,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 300101,
+     "cash": 10055715,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 438035,
+     "cash": 10452491,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 424340,
+     "cash": 10875278,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 409800,
+     "cash": 11292667,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 399149,
+     "cash": 11672471,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 371537,
+     "cash": 12045499,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 12045499,
+   "owner": 4800000,
+   "equity": 12141454,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 55,
+     "status": "reviewed",
+     "add": 46200
+    },
+    {
+     "turn": 93,
+     "status": "reviewed",
+     "add": 30800
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 30800
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 5,
+   "id": "R02",
+   "name": "標準：年3回改善",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 129,
+   "score": 129,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20698850,
+    "profitability": 24,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 129,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 625362.6666666666,
+    "totalOrdinary": 3594017,
+    "assets": 12630463,
+    "equity": 11933465,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1055748,
+     "cash": 7548565,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 56762,
+     "cash": 8100611,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 282892,
+     "cash": 8666723,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 266884,
+     "cash": 9120528,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 357993,
+     "cash": 9834424,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 447362,
+     "cash": 10276360,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 425653,
+     "cash": 10696720,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 412628,
+     "cash": 11103273,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 414227,
+     "cash": 11518245,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 324812,
+     "cash": 11830078,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 11830078,
+   "owner": 4800000,
+   "equity": 11933465,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 52,
+     "status": "reviewed",
+     "add": 6600
+    },
+    {
+     "turn": 115,
+     "status": "reviewed",
+     "add": 61600
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 777,
+   "id": "R02",
+   "name": "標準：年3回改善",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 129,
+   "score": 129,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20740533.333333332,
+    "profitability": 24,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 129,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 645392.6666666666,
+    "totalOrdinary": 3485927,
+    "assets": 12555892,
+    "equity": 11852647,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1150443,
+     "cash": 7540839,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 15987,
+     "cash": 7960756,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 275191,
+     "cash": 8523081,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 323919,
+     "cash": 9040364,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 357124,
+     "cash": 9732124,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 441127,
+     "cash": 10180211,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 381658,
+     "cash": 10538955,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 421637,
+     "cash": 10979251,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 432850,
+     "cash": 11417333,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 353597,
+     "cash": 11755507,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 11755507,
+   "owner": 4800000,
+   "equity": 11852647,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 53,
+     "status": "reviewed",
+     "add": 11000
+    },
+    {
+     "turn": 110,
+     "status": "reviewed",
+     "add": 46200
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 73129,
+   "id": "R10",
+   "name": "夏秋の仕入を倍増",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 133,
+   "score": 133,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20934850,
+    "profitability": 28,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 133,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 731632.3333333334,
+    "totalOrdinary": 4331777,
+    "assets": 13216034,
+    "equity": 12475560,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1194639,
+     "cash": 7374643,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -15690,
+     "cash": 7891693,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 307126,
+     "cash": 8482400,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 434551,
+     "cash": 9118714,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 522974,
+     "cash": 10058699,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 552398,
+     "cash": 10575898,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 483741,
+     "cash": 11032494,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 463105,
+     "cash": 11485966,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 511720,
+     "cash": 12020375,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 410274,
+     "cash": 12415649,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 12415649,
+   "owner": 4800000,
+   "equity": 12475560,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 57,
+     "status": "reviewed",
+     "add": 8800
+    },
+    {
+     "turn": 109,
+     "status": "reviewed",
+     "add": 30800
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 38500
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 91,
+   "id": "R10",
+   "name": "夏秋の仕入を倍増",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 133,
+   "score": 133,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20908050,
+    "profitability": 28,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 133,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 719910,
+    "totalOrdinary": 4371130,
+    "assets": 13222486,
+    "equity": 12499248,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1124226,
+     "cash": 7452098,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 118682,
+     "cash": 8110626,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 243876,
+     "cash": 8617249,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 426010,
+     "cash": 9250584,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 416717,
+     "cash": 10082134,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 554062,
+     "cash": 10605104,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 505403,
+     "cash": 11092665,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 493177,
+     "cash": 11580137,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 453706,
+     "cash": 12033390,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 411841,
+     "cash": 12422101,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 12422101,
+   "owner": 4800000,
+   "equity": 12499248,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 49,
+     "status": "reviewed",
+     "add": 23193
+    },
+    {
+     "turn": 103,
+     "status": "reviewed",
+     "add": 38500
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 30800
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 202609,
+   "id": "R10",
+   "name": "夏秋の仕入を倍増",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 134,
+   "score": 134,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20934150,
+    "profitability": 29,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 134,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 732224,
+    "totalOrdinary": 4812124,
+    "assets": 13568952,
+    "equity": 12829646,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -954486,
+     "cash": 7659955,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 147654,
+     "cash": 8302209,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 295251,
+     "cash": 8872440,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 430132,
+     "cash": 9578304,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 476879,
+     "cash": 10435586,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 520899,
+     "cash": 10870809,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 521212,
+     "cash": 11396217,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 469266,
+     "cash": 11856534,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 476566,
+     "cash": 12322057,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 446273,
+     "cash": 12768567,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 12768567,
+   "owner": 4800000,
+   "equity": 12829646,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 55,
+     "status": "reviewed",
+     "add": 46200
+    },
+    {
+     "turn": 93,
+     "status": "reviewed",
+     "add": 30800
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 30800
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 5,
+   "id": "R10",
+   "name": "夏秋の仕入を倍増",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 133,
+   "score": 133,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20902916.666666668,
+    "profitability": 28,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 133,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 718551,
+    "totalOrdinary": 4509391,
+    "assets": 13351874,
+    "equity": 12619682,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1056363,
+     "cash": 7547890,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 56410,
+     "cash": 8099609,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 282749,
+     "cash": 8665598,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 427476,
+     "cash": 9296661,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 495188,
+     "cash": 10242160,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 529847,
+     "cash": 10693961,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 523034,
+     "cash": 11217867,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 469852,
+     "cash": 11663819,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 491262,
+     "cash": 12164997,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 400227,
+     "cash": 12551489,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 12551489,
+   "owner": 4800000,
+   "equity": 12619682,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 52,
+     "status": "reviewed",
+     "add": 20424
+    },
+    {
+     "turn": 115,
+     "status": "reviewed",
+     "add": 61600
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 777,
+   "id": "R10",
+   "name": "夏秋の仕入を倍増",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 133,
+   "score": 133,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 20945883.333333332,
+    "profitability": 28,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 133,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 739164.6666666666,
+    "totalOrdinary": 4398312,
+    "assets": 13274773,
+    "equity": 12536910,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1151272,
+     "cash": 7539931,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 15636,
+     "cash": 7959541,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 275048,
+     "cash": 8521743,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 484966,
+     "cash": 9216785,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 492762,
+     "cash": 10148547,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 524200,
+     "cash": 10597388,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 476498,
+     "cash": 11056491,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 480513,
+     "cash": 11538877,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 510776,
+     "cash": 12063776,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 427783,
+     "cash": 12474388,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 12474388,
+   "owner": 4800000,
+   "equity": 12536910,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 53,
+     "status": "reviewed",
+     "add": 12203
+    },
+    {
+     "turn": 110,
+     "status": "reviewed",
+     "add": 46200
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 73129,
+   "id": "R12",
+   "name": "常時1割値上げ",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 132,
+   "score": 132,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 19528080,
+    "profitability": 27,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 132,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 970492.3333333334,
+    "totalOrdinary": 2148776,
+    "assets": 11667989,
+    "equity": 10838308,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1751951,
+     "cash": 6686830,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -660223,
+     "cash": 6519162,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -361689,
+     "cash": 6416779,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -181537,
+     "cash": 6423289,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 195032,
+     "cash": 6805036,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 670478,
+     "cash": 7571488,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 837189,
+     "cash": 8413909,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 809929,
+     "cash": 9297452,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 679637,
+     "cash": 10162509,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 601443,
+     "cash": 10759878,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 10759878,
+   "owner": 4800000,
+   "equity": 10838308,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 57,
+     "status": "reviewed",
+     "add": 8800
+    },
+    {
+     "turn": 109,
+     "status": "reviewed",
+     "add": 30800
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 38500
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 91,
+   "id": "R12",
+   "name": "常時1割値上げ",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 132,
+   "score": 132,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 19500781.666666668,
+    "profitability": 27,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 132,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 957196.6666666666,
+    "totalOrdinary": 2145623,
+    "assets": 11643878,
+    "equity": 10830393,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1689562,
+     "cash": 6755460,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -536658,
+     "cash": 6717471,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -421249,
+     "cash": 6537219,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -190970,
+     "cash": 6539307,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 112819,
+     "cash": 6831784,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 653191,
+     "cash": 7587220,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 856462,
+     "cash": 8452569,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 817659,
+     "cash": 9366776,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 623397,
+     "cash": 10143328,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 605304,
+     "cash": 10736208,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 10736208,
+   "owner": 4800000,
+   "equity": 10830393,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 49,
+     "status": "reviewed",
+     "add": 11000
+    },
+    {
+     "turn": 103,
+     "status": "reviewed",
+     "add": 38500
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 30800
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 202609,
+   "id": "R12",
+   "name": "常時1割値上げ",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 133,
+   "score": 133,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 19521828.333333332,
+    "profitability": 28,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 133,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 968987.6666666666,
+    "totalOrdinary": 2561424,
+    "assets": 11971211,
+    "equity": 11142869,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1528482,
+     "cash": 6927789,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -510583,
+     "cash": 6899169,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -374103,
+     "cash": 6776234,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -124955,
+     "cash": 6846223,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 212267,
+     "cash": 7241711,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 616440,
+     "cash": 7946559,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 873877,
+     "cash": 8835095,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 694142,
+     "cash": 9747439,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 647189,
+     "cash": 10416780,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 637077,
+     "cash": 11063541,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 11063541,
+   "owner": 4800000,
+   "equity": 11142869,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 55,
+     "status": "reviewed",
+     "add": 13200
+    },
+    {
+     "turn": 93,
+     "status": "reviewed",
+     "add": 8800
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 30800
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 5,
+   "id": "R12",
+   "name": "常時1割値上げ",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 132,
+   "score": 132,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 19496748.333333332,
+    "profitability": 27,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 132,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 956093.6666666666,
+    "totalOrdinary": 2280953,
+    "assets": 11769440,
+    "equity": 10948666,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1622838,
+     "cash": 6823999,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -593527,
+     "cash": 6713575,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -384224,
+     "cash": 6587801,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -188954,
+     "cash": 6588405,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 209989,
+     "cash": 6987125,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 627451,
+     "cash": 7704973,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 874775,
+     "cash": 8593396,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 775390,
+     "cash": 9477943,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 660548,
+     "cash": 10275862,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 590056,
+     "cash": 10861770,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 10861770,
+   "owner": 4800000,
+   "equity": 10948666,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 52,
+     "status": "reviewed",
+     "add": 6600
+    },
+    {
+     "turn": 115,
+     "status": "reviewed",
+     "add": 61600
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 777,
+   "id": "R12",
+   "name": "常時1割値上げ",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 133,
+   "score": 133,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 19535340,
+    "profitability": 28,
+    "health": 100,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 133,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 976733.3333333334,
+    "totalOrdinary": 2190523,
+    "assets": 11708635,
+    "equity": 10881094,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1712363,
+     "cash": 6819088,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -632349,
+     "cash": 6581345,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -392532,
+     "cash": 6450314,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -135915,
+     "cash": 6510092,
+     "owner": 1920000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 193730,
+     "cash": 6886065,
+     "owner": 2400000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 619418,
+     "cash": 7596264,
+     "owner": 2880000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 830334,
+     "cash": 8436246,
+     "owner": 3360000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 811897,
+     "cash": 9339587,
+     "owner": 3840000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 678752,
+     "cash": 10187075,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 620122,
+     "cash": 10800524,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 10800524,
+   "owner": 4800000,
+   "equity": 10881094,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 0,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 53,
+     "status": "reviewed",
+     "add": 11000
+    },
+    {
+     "turn": 110,
+     "status": "reviewed",
+     "add": 46200
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 0,
+   "ops": []
+  },
+  {
+   "seed": 73129,
+   "id": "R13",
+   "name": "設備拡大（融資）＋バイト",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 175,
+   "score": 175,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 32311813.333333332,
+    "profitability": 71,
+    "health": 99,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 175,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 1702972.3333333333,
+    "totalOrdinary": 15015937,
+    "assets": 22202598,
+    "equity": 20510880,
+    "debtYears": 0.4475359637481355,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1193909,
+     "cash": 7375443,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -15338,
+     "cash": 7892810,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 176204,
+     "cash": 4687826,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2279464,
+     "cash": 8824228,
+     "owner": 1920000,
+     "debt": 2425000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2161665,
+     "cash": 12346846,
+     "owner": 2400000,
+     "debt": 2125000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1944130,
+     "cash": 14922815,
+     "owner": 2880000,
+     "debt": 1825000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1565351,
+     "cash": 17142068,
+     "owner": 3360000,
+     "debt": 1525000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1590719,
+     "cash": 18891326,
+     "owner": 3840000,
+     "debt": 1225000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1291007,
+     "cash": 20083577,
+     "owner": 4320000,
+     "debt": 925000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 711587,
+     "cash": 20556953,
+     "owner": 4800000,
+     "debt": 625000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 20556953,
+   "owner": 4800000,
+   "equity": 20510880,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 4,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 57,
+     "status": "reviewed",
+     "add": 30800
+    },
+    {
+     "turn": 109,
+     "status": "reviewed",
+     "add": 23100
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 15400
+    }
+   ],
+   "waste": 98065,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 0
+    },
+    {
+     "turn": 29,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 0
+    },
+    {
+     "turn": 37,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 3000000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    }
+   ]
+  },
+  {
+   "seed": 91,
+   "id": "R13",
+   "name": "設備拡大（融資）＋バイト",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 172,
+   "score": 172,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 31838886.666666668,
+    "profitability": 69,
+    "health": 98,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 172,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 1564296.3333333333,
+    "totalOrdinary": 15307320,
+    "assets": 22362620,
+    "equity": 20735094,
+    "debtYears": 0.4867345966917132,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1123660,
+     "cash": 7452719,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 119034,
+     "cash": 8111579,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 748018,
+     "cash": 5611100,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2133028,
+     "cash": 9766743,
+     "owner": 1920000,
+     "debt": 2425000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2141212,
+     "cash": 12925624,
+     "owner": 2400000,
+     "debt": 2125000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1918523,
+     "cash": 15606528,
+     "owner": 2880000,
+     "debt": 1825000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1506295,
+     "cash": 17717142,
+     "owner": 3360000,
+     "debt": 1525000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1562591,
+     "cash": 19372099,
+     "owner": 3840000,
+     "debt": 1225000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1112201,
+     "cash": 20327936,
+     "owner": 4320000,
+     "debt": 925000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 617852,
+     "cash": 20673646,
+     "owner": 4800000,
+     "debt": 625000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 20673646,
+   "owner": 4800000,
+   "equity": 20735094,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 4,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 49,
+     "status": "reviewed",
+     "add": 38500
+    },
+    {
+     "turn": 103,
+     "status": "reviewed",
+     "add": 23100
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 100338,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 0
+    },
+    {
+     "turn": 27,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 0
+    },
+    {
+     "turn": 37,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 3000000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    }
+   ]
+  },
+  {
+   "seed": 202609,
+   "id": "R13",
+   "name": "設備拡大（融資）＋バイト",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 181,
+   "score": 181,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 32514110,
+    "profitability": 77,
+    "health": 99,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 181,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 1885819.6666666667,
+    "totalOrdinary": 16218453,
+    "assets": 23245974,
+    "equity": 21424118,
+    "debtYears": 0.41630230838504856,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -953735,
+     "cash": 7660778,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 148005,
+     "cash": 8303346,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 146241,
+     "cash": 5214222,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2107690,
+     "cash": 9158262,
+     "owner": 1920000,
+     "debt": 2425000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2160655,
+     "cash": 12577871,
+     "owner": 2400000,
+     "debt": 2125000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2099138,
+     "cash": 15453734,
+     "owner": 2880000,
+     "debt": 1825000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1688703,
+     "cash": 17677233,
+     "owner": 3360000,
+     "debt": 1525000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1728626,
+     "cash": 19566199,
+     "owner": 3840000,
+     "debt": 1225000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1319935,
+     "cash": 20575618,
+     "owner": 4320000,
+     "debt": 925000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 978860,
+     "cash": 21600330,
+     "owner": 4800000,
+     "debt": 625000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 21600330,
+   "owner": 4800000,
+   "equity": 21424118,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 4,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 55,
+     "status": "reviewed",
+     "add": 46200
+    },
+    {
+     "turn": 93,
+     "status": "reviewed",
+     "add": 0
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 7700
+    }
+   ],
+   "waste": 100495,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 0
+    },
+    {
+     "turn": 27,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 0
+    },
+    {
+     "turn": 37,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 3000000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    }
+   ]
+  },
+  {
+   "seed": 5,
+   "id": "R13",
+   "name": "設備拡大（融資）＋バイト",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 167,
+   "score": 167,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 31665310,
+    "profitability": 64,
+    "health": 98,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 167,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 1428612.6666666667,
+    "totalOrdinary": 13903119,
+    "assets": 21282181,
+    "equity": 19687616,
+    "debtYears": 0.5241577210415609,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1055748,
+     "cash": 7548565,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 56762,
+     "cash": 8100611,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 118068,
+     "cash": 4994537,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2360748,
+     "cash": 9151694,
+     "owner": 1920000,
+     "debt": 2425000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2089817,
+     "cash": 12562775,
+     "owner": 2400000,
+     "debt": 2125000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1762252,
+     "cash": 14916168,
+     "owner": 2880000,
+     "debt": 1825000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1374038,
+     "cash": 16935695,
+     "owner": 3360000,
+     "debt": 1525000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1461353,
+     "cash": 18495730,
+     "owner": 3840000,
+     "debt": 1225000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1011431,
+     "cash": 19319336,
+     "owner": 4320000,
+     "debt": 925000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 508895,
+     "cash": 19649234,
+     "owner": 4800000,
+     "debt": 625000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 19649234,
+   "owner": 4800000,
+   "equity": 19687616,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 4,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 52,
+     "status": "reviewed",
+     "add": 23100
+    },
+    {
+     "turn": 115,
+     "status": "reviewed",
+     "add": 30800
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 100024,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 0
+    },
+    {
+     "turn": 27,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 0
+    },
+    {
+     "turn": 37,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 3000000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    }
+   ]
+  },
+  {
+   "seed": 777,
+   "id": "R13",
+   "name": "設備拡大（融資）＋バイト",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 177,
+   "score": 177,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 32555243.333333332,
+    "profitability": 73,
+    "health": 99,
+    "wealth": 5,
+    "wealthBefore": 5,
+    "total": 177,
+    "personal": 4800000,
+    "sale": 0,
+    "ordinary": 1827261,
+    "totalOrdinary": 15394479,
+    "assets": 22508657,
+    "equity": 20806137,
+    "debtYears": 0.42484337058329386,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1150443,
+     "cash": 7540839,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 15987,
+     "cash": 7960756,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 113983,
+     "cash": 4807965,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2292561,
+     "cash": 8897553,
+     "owner": 1920000,
+     "debt": 2425000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2119643,
+     "cash": 12357950,
+     "owner": 2400000,
+     "debt": 2125000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1940437,
+     "cash": 14946251,
+     "owner": 2880000,
+     "debt": 1825000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1583981,
+     "cash": 17010241,
+     "owner": 3360000,
+     "debt": 1525000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1747714,
+     "cash": 19137791,
+     "owner": 3840000,
+     "debt": 1225000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1355102,
+     "cash": 20290870,
+     "owner": 4320000,
+     "debt": 925000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 787172,
+     "cash": 20863776,
+     "owner": 4800000,
+     "debt": 625000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 20863776,
+   "owner": 4800000,
+   "equity": 20806137,
+   "ma": "ineligible",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 4,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 53,
+     "status": "reviewed",
+     "add": 38500
+    },
+    {
+     "turn": 110,
+     "status": "reviewed",
+     "add": 15400
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 99163,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 0
+    },
+    {
+     "turn": 28,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 0
+    },
+    {
+     "turn": 37,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 3000000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    }
+   ]
+  },
+  {
+   "seed": 73129,
+   "id": "R17",
+   "name": "釣船",
+   "turn": 76,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -1193909,
+     "cash": 7375443,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -15338,
+     "cash": 7892810,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 307269,
+     "cash": 8483640,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -2653714,
+     "cash": 5251072,
+     "owner": 1920000,
+     "debt": 2767909,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1283914,
+     "cash": 4626571,
+     "owner": 2400000,
+     "debt": 2312905,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -4448549,
+     "cash": 0,
+     "owner": 2778927,
+     "debt": 1857901,
+     "officerLoan": 0,
+     "ownerLoan": 101073
+    }
+   ],
+   "cash": -540778,
+   "owner": 0,
+   "equity": -2747174,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 5,
+   "lostShop": 1,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 57,
+     "status": "reviewed",
+     "add": 8800
+    }
+   ],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 37,
+     "type": "boat",
+     "loan": 3640000
+    },
+    {
+     "turn": 72,
+     "type": "crisis",
+     "need": 101073
+    },
+    {
+     "turn": 72,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 73,
+     "type": "crisis",
+     "need": 775551
+    },
+    {
+     "turn": 73,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 74,
+     "type": "crisis",
+     "need": 1204077
+    },
+    {
+     "turn": 74,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 75,
+     "type": "crisis",
+     "need": 801495
+    },
+    {
+     "turn": 75,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 76,
+     "type": "crisis",
+     "need": 698582
+    },
+    {
+     "turn": 76,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 91,
+   "id": "R17",
+   "name": "釣船",
+   "turn": 78,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -1123660,
+     "cash": 7452719,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 119034,
+     "cash": 8111579,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 244019,
+     "cash": 8618325,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -687609,
+     "cash": 7812459,
+     "owner": 1920000,
+     "debt": 2988426,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1503814,
+     "cash": 6614092,
+     "owner": 2400000,
+     "debt": 2497170,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -4381521,
+     "cash": 1973239,
+     "owner": 2880000,
+     "debt": 2005914,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": -547301,
+   "owner": 0,
+   "equity": -3032111,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 5,
+   "lostShop": 1,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 49,
+     "status": "reviewed",
+     "add": 11000
+    }
+   ],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 37,
+     "type": "boat",
+     "loan": 3930000
+    },
+    {
+     "turn": 74,
+     "type": "crisis",
+     "need": 355508
+    },
+    {
+     "turn": 74,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 75,
+     "type": "crisis",
+     "need": 741343
+    },
+    {
+     "turn": 75,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 76,
+     "type": "crisis",
+     "need": 848965
+    },
+    {
+     "turn": 76,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 77,
+     "type": "crisis",
+     "need": 729877
+    },
+    {
+     "turn": 77,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 78,
+     "type": "crisis",
+     "need": 991608
+    },
+    {
+     "turn": 78,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 202609,
+   "id": "R17",
+   "name": "釣船",
+   "turn": 81,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -953735,
+     "cash": 7660778,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 148005,
+     "cash": 8303346,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 295394,
+     "cash": 8873700,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -291794,
+     "cash": 8782019,
+     "owner": 1920000,
+     "debt": 3231767,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -2269979,
+     "cash": 6642130,
+     "owner": 2400000,
+     "debt": 2700515,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -3355182,
+     "cash": 3064344,
+     "owner": 2880000,
+     "debt": 2169263,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": -551661,
+   "owner": 0,
+   "equity": -3101570,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 4,
+   "lostShop": 1,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 55,
+     "status": "reviewed",
+     "add": 13200
+    }
+   ],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 37,
+     "type": "boat",
+     "loan": 4250000
+    },
+    {
+     "turn": 78,
+     "type": "crisis",
+     "need": 265949
+    },
+    {
+     "turn": 78,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 79,
+     "type": "crisis",
+     "need": 969879
+    },
+    {
+     "turn": 79,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 80,
+     "type": "crisis",
+     "need": 1429902
+    },
+    {
+     "turn": 80,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 81,
+     "type": "crisis",
+     "need": 1125931
+    },
+    {
+     "turn": 81,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 5,
+   "id": "R17",
+   "name": "釣船",
+   "turn": 80,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -1055748,
+     "cash": 7548565,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 56762,
+     "cash": 8100611,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 282892,
+     "cash": 8666723,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1149273,
+     "cash": 7260432,
+     "owner": 1920000,
+     "debt": 2912392,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -1315442,
+     "cash": 6351390,
+     "owner": 2400000,
+     "debt": 2433640,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -3307347,
+     "cash": 2699728,
+     "owner": 2880000,
+     "debt": 1954888,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": -631761,
+   "owner": 0,
+   "equity": -2822473,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 4,
+   "lostShop": 1,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 52,
+     "status": "reviewed",
+     "add": 6600
+    }
+   ],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 37,
+     "type": "boat",
+     "loan": 3830000
+    },
+    {
+     "turn": 77,
+     "type": "crisis",
+     "need": 48837
+    },
+    {
+     "turn": 77,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 78,
+     "type": "crisis",
+     "need": 881019
+    },
+    {
+     "turn": 78,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 79,
+     "type": "crisis",
+     "need": 1558553
+    },
+    {
+     "turn": 79,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 80,
+     "type": "crisis",
+     "need": 1343352
+    },
+    {
+     "turn": 80,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 777,
+   "id": "R17",
+   "name": "釣船",
+   "turn": 74,
+   "ended": true,
+   "crisis": "failed",
+   "scoreBeforeMA": null,
+   "score": null,
+   "parts": null,
+   "annual": [
+    {
+     "profit": -1150443,
+     "cash": 7540839,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 15987,
+     "cash": 7960756,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 275191,
+     "cash": 8523081,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -888802,
+     "cash": 7235484,
+     "owner": 1920000,
+     "debt": 2767909,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -2535574,
+     "cash": 4968949,
+     "owner": 2400000,
+     "debt": 2312905,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -5305364,
+     "cash": 0,
+     "owner": 2454088,
+     "debt": 1857901,
+     "officerLoan": 0,
+     "ownerLoan": 425912
+    }
+   ],
+   "cash": -130716,
+   "owner": 0,
+   "equity": -2102131,
+   "ma": null,
+   "bankMonths": 0,
+   "rescues": 3,
+   "lostShop": 1,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 53,
+     "status": "reviewed",
+     "add": 11000
+    }
+   ],
+   "waste": 0,
+   "ops": [
+    {
+     "turn": 37,
+     "type": "boat",
+     "loan": 3640000
+    },
+    {
+     "turn": 72,
+     "type": "crisis",
+     "need": 425912
+    },
+    {
+     "turn": 72,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 73,
+     "type": "crisis",
+     "need": 1449191
+    },
+    {
+     "turn": 73,
+     "type": "rescueOwner"
+    },
+    {
+     "turn": 74,
+     "type": "crisis",
+     "need": 1215613
+    },
+    {
+     "turn": 74,
+     "type": "rescueOwner"
+    }
+   ]
+  },
+  {
+   "seed": 73129,
+   "id": "R23",
+   "name": "設備拡大＋協賛募集をすべて受ける",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 205,
+   "score": 253,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 37844673.333333336,
+    "profitability": 100,
+    "health": 100,
+    "wealth": 53,
+    "wealthBefore": 5,
+    "total": 253,
+    "personal": 53120000,
+    "sale": 48320000,
+    "ordinary": 3962262.3333333335,
+    "totalOrdinary": 29159953,
+    "assets": 32674510,
+    "equity": 31118894,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -127313,
+     "cash": 8572073,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 133667,
+     "cash": 9167030,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1188601,
+     "cash": 6085488,
+     "owner": 1440000,
+     "debt": 1600320,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2449395,
+     "cash": 10866283,
+     "owner": 1920000,
+     "debt": 1164312,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2485107,
+     "cash": 13596671,
+     "owner": 2400000,
+     "debt": 728304,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2912762,
+     "cash": 17856648,
+     "owner": 2880000,
+     "debt": 292296,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 3399958,
+     "cash": 21650862,
+     "owner": 3360000,
+     "debt": 133288,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 3211036,
+     "cash": 25370989,
+     "owner": 3840000,
+     "debt": 33280,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2842870,
+     "cash": 28200071,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2622811,
+     "cash": 31158550,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 31158550,
+   "owner": 53120000,
+   "equity": 31118894,
+   "ma": "sold",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 40,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 57,
+     "status": "reviewed",
+     "add": 30800
+    },
+    {
+     "turn": 109,
+     "status": "reviewed",
+     "add": 23100
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 15400
+    }
+   ],
+   "waste": 107322,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 1500000
+    },
+    {
+     "turn": 27,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 180000
+    },
+    {
+     "turn": 28,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 700000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    },
+    {
+     "turn": 120,
+     "type": "ma",
+     "phase": "sold"
+    }
+   ]
+  },
+  {
+   "seed": 91,
+   "id": "R23",
+   "name": "設備拡大＋協賛募集をすべて受ける",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 205,
+   "score": 249,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 37314400,
+    "profitability": 100,
+    "health": 100,
+    "wealth": 49,
+    "wealthBefore": 5,
+    "total": 249,
+    "personal": 48630000,
+    "sale": 43830000,
+    "ordinary": 3601472.3333333335,
+    "totalOrdinary": 25092907,
+    "assets": 29488474,
+    "equity": 28074285,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -375449,
+     "cash": 8299124,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 266469,
+     "cash": 9023110,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1333105,
+     "cash": 5806124,
+     "owner": 1440000,
+     "debt": 1256653,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2437934,
+     "cash": 10769332,
+     "owner": 1920000,
+     "debt": 916645,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2319027,
+     "cash": 13165837,
+     "owner": 2400000,
+     "debt": 576637,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2484073,
+     "cash": 17078011,
+     "owner": 2880000,
+     "debt": 236629,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1732837,
+     "cash": 19067885,
+     "owner": 3360000,
+     "debt": 113311,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1942058,
+     "cash": 21464378,
+     "owner": 3840000,
+     "debt": 33307,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 3538645,
+     "cash": 25562182,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2395586,
+     "cash": 27883451,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 27883451,
+   "owner": 48630000,
+   "equity": 28074285,
+   "ma": "sold",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 26,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 49,
+     "status": "reviewed",
+     "add": 38500
+    },
+    {
+     "turn": 103,
+     "status": "reviewed",
+     "add": 23100
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 103950,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 1300000
+    },
+    {
+     "turn": 27,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 0
+    },
+    {
+     "turn": 29,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 560000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    },
+    {
+     "turn": 120,
+     "type": "ma",
+     "phase": "sold"
+    }
+   ]
+  },
+  {
+   "seed": 202609,
+   "id": "R23",
+   "name": "設備拡大＋協賛募集をすべて受ける",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 205,
+   "score": 249,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 36422970,
+    "profitability": 100,
+    "health": 100,
+    "wealth": 49,
+    "wealthBefore": 5,
+    "total": 249,
+    "personal": 49260000,
+    "sale": 44460000,
+    "ordinary": 3456854.3333333335,
+    "totalOrdinary": 26700739,
+    "assets": 30941118,
+    "equity": 29285831,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -414322,
+     "cash": 8256364,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 405173,
+     "cash": 9172992,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1283607,
+     "cash": 6244718,
+     "owner": 1440000,
+     "debt": 1552573,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2100602,
+     "cash": 10558728,
+     "owner": 1920000,
+     "debt": 1129417,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2421910,
+     "cash": 13594247,
+     "owner": 2400000,
+     "debt": 706261,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2813162,
+     "cash": 17297693,
+     "owner": 2880000,
+     "debt": 283105,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 3113451,
+     "cash": 21092540,
+     "owner": 3360000,
+     "debt": 129472,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2520186,
+     "cash": 23740477,
+     "owner": 3840000,
+     "debt": 32320,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2319803,
+     "cash": 25850034,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2722259,
+     "cash": 29413118,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 29413118,
+   "owner": 49260000,
+   "equity": 29285831,
+   "ma": "sold",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 26,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 55,
+     "status": "reviewed",
+     "add": 46200
+    },
+    {
+     "turn": 93,
+     "status": "reviewed",
+     "add": 0
+    },
+    {
+     "turn": 120,
+     "status": "reviewed",
+     "add": 7700
+    }
+   ],
+   "waste": 105519,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 1500000
+    },
+    {
+     "turn": 27,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 130000
+    },
+    {
+     "turn": 28,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 680000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    },
+    {
+     "turn": 120,
+     "type": "ma",
+     "phase": "sold"
+    }
+   ]
+  },
+  {
+   "seed": 5,
+   "id": "R23",
+   "name": "設備拡大＋協賛募集をすべて受ける",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 205,
+   "score": 244,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 35275433.333333336,
+    "profitability": 100,
+    "health": 100,
+    "wealth": 44,
+    "wealthBefore": 5,
+    "total": 244,
+    "personal": 44490000,
+    "sale": 39690000,
+    "ordinary": 2963278.6666666665,
+    "totalOrdinary": 22970101,
+    "assets": 27541649,
+    "equity": 26487853,
+    "debtYears": 0,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -366168,
+     "cash": 8309334,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -30901,
+     "cash": 8693485,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 399418,
+     "cash": 3241155,
+     "owner": 1440000,
+     "debt": 614034,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2195015,
+     "cash": 8096530,
+     "owner": 1920000,
+     "debt": 459738,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2116754,
+     "cash": 10820820,
+     "owner": 2400000,
+     "debt": 305442,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2707540,
+     "cash": 15096626,
+     "owner": 2880000,
+     "debt": 151146,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 3031517,
+     "cash": 18839206,
+     "owner": 3360000,
+     "debt": 88540,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2700239,
+     "cash": 21970293,
+     "owner": 3840000,
+     "debt": 44248,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2220071,
+     "cash": 24446441,
+     "owner": 4320000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 1514368,
+     "cash": 25896607,
+     "owner": 4800000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 25896607,
+   "owner": 44490000,
+   "equity": 26487853,
+   "ma": "sold",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 32,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 52,
+     "status": "reviewed",
+     "add": 23100
+    },
+    {
+     "turn": 115,
+     "status": "reviewed",
+     "add": 30800
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 104184,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 550000
+    },
+    {
+     "turn": 27,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 0
+    },
+    {
+     "turn": 36,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 310000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    },
+    {
+     "turn": 120,
+     "type": "ma",
+     "phase": "sold"
+    }
+   ]
+  },
+  {
+   "seed": 777,
+   "id": "R23",
+   "name": "設備拡大＋協賛募集をすべて受ける",
+   "turn": 120,
+   "ended": false,
+   "crisis": null,
+   "scoreBeforeMA": 204,
+   "score": 246,
+   "parts": {
+    "model": "profit-amount-20261002",
+    "sales": 37513826.666666664,
+    "profitability": 100,
+    "health": 99,
+    "wealth": 47,
+    "wealthBefore": 5,
+    "total": 246,
+    "personal": 47340000,
+    "sale": 42540000,
+    "ordinary": 3733428.6666666665,
+    "totalOrdinary": 22225634,
+    "assets": 28460674,
+    "equity": 25929503,
+    "debtYears": 0.22423662580038337,
+    "fundingYears": 0
+   },
+   "annual": [
+    {
+     "profit": -1362794,
+     "cash": 7149561,
+     "owner": 480000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": -381134,
+     "cash": 7253891,
+     "owner": 960000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 143440,
+     "cash": 4099172,
+     "owner": 1440000,
+     "debt": 0,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2659277,
+     "cash": 8263486,
+     "owner": 1920000,
+     "debt": 2425000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2123016,
+     "cash": 12044485,
+     "owner": 2400000,
+     "debt": 2125000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2280647,
+     "cash": 15098819,
+     "owner": 2880000,
+     "debt": 1825000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2288186,
+     "cash": 17792202,
+     "owner": 3360000,
+     "debt": 1525000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2614505,
+     "cash": 21026416,
+     "owner": 3840000,
+     "debt": 1225000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2810176,
+     "cash": 23948305,
+     "owner": 4320000,
+     "debt": 925000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    },
+    {
+     "profit": 2754184,
+     "cash": 26809679,
+     "owner": 4800000,
+     "debt": 625000,
+     "officerLoan": 0,
+     "ownerLoan": 0
+    }
+   ],
+   "cash": 26809679,
+   "owner": 47340000,
+   "equity": 25929503,
+   "ma": "sold",
+   "bankMonths": 0,
+   "rescues": 0,
+   "lostShop": 25,
+   "shortBuy": 0,
+   "audits": [
+    {
+     "turn": 53,
+     "status": "reviewed",
+     "add": 38500
+    },
+    {
+     "turn": 110,
+     "status": "reviewed",
+     "add": 15400
+    },
+    {
+     "turn": 120,
+     "status": "reviewed"
+    }
+   ],
+   "waste": 99477,
+   "ops": [
+    {
+     "turn": 25,
+     "type": "hire"
+    },
+    {
+     "turn": 26,
+     "type": "equipment",
+     "id": "freezer",
+     "loan": 0
+    },
+    {
+     "turn": 31,
+     "type": "equipment",
+     "id": "tank",
+     "loan": 0
+    },
+    {
+     "turn": 37,
+     "type": "equipment",
+     "id": "warehouse",
+     "loan": 3000000
+    },
+    {
+     "turn": 59,
+     "type": "promotion"
+    },
+    {
+     "turn": 120,
+     "type": "ma",
+     "phase": "sold"
+    }
+   ]
+  }
+ ]
+}

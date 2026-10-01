@@ -10,10 +10,11 @@ function review(s,year){
  const entries=s.entries.filter(e=>e.turn>=start&&e.turn<=end.turn&&!e.type?.startsWith('yearClose.'));
  const receipts=entries.filter(e=>e.debit==='預金').reduce((n,e)=>n+e.amount,0),payments=entries.filter(e=>e.credit==='預金').reduce((n,e)=>n+e.amount,0);
  const sales=b.売上高||0,gross=sales-(b.売上原価||0),cash=b.預金||0;
+ const contributed=year===1?entries.filter(e=>e.debit==='預金'&&e.credit==='資本金').reduce((n,e)=>n+e.amount,0):0;
  const monthly=rows.map(h=>({turn:h.turn,month:(h.turn+2)%12+1,profit:h.monthProfit??E.profit(h.balances)-E.profit(rows.find(x=>x.turn===h.turn-1)?.balances||{}),cash:h.balances.預金}));
  const best=monthly.reduce((a,b)=>a.profit>b.profit?a:b),worst=monthly.reduce((a,b)=>a.profit<b.profit?a:b);
  return {year,start,end:end.turn,complete:end.turn===year*12,months:rows.length,sales,gross,margin:sales?gross/sales:null,ordinary:E.ordinary(b),profit:E.profit(b),tax:b.法人税等||0,
-  cash,openingCash:prior?.balances.預金||0,receipts,payments,cashDelta:cash-(prior?.balances.預金||0),inventory:b.商品||0,receivables:b.売掛金||0,waste:b.商品廃棄損||0,
+  capitalPaid:contributed,cashChangeAfterFunding:cash-(prior?.balances.預金||contributed),cash,openingCash:prior?.balances.預金||0,receipts,payments,cashDelta:cash-(prior?.balances.預金||0),inventory:b.商品||0,receivables:b.売掛金||0,waste:b.商品廃棄損||0,
   debt:debt(b),equity:E.managementRatios(b).equity,ownerLoan:b.役員貸付金||0,ownerInterest:b.未収利息||0,
   priorProfit:prior?E.profit(prior.balances):null,priorSales:prior?.balances.売上高??null,
   minimumCash:Math.min(...rows.map(h=>h.balances.預金)),best,worst,monthly,

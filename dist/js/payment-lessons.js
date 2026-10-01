@@ -60,6 +60,6 @@ renderAccountingGuide=function(r){
  guideBeforePayments(r);el('accountingBasicsBody').innerHTML+=`<details><summary>カードのまとめ買いと税抜売上</summary>${salesTaxLesson([])}</details><details><summary>消費税・法人税を払うとき</summary>${paymentLesson('納付で費用を二度数えない',[
   '法人税等は決算で「法人税等 ／ 未払法人税等」、納付で「未払法人税等 ／ 預金」。消費税は仮受と仮払を精算してから、納付で「未払消費税等 ／ 預金」や。どちらも納付だけでP/Lの費用をもう一度増やすわけやないで。',
   '消費税の中間納付は「仮払消費税中間納付 ／ 預金」として別に記録し、年末ではなく会社の３月決算で年間税額から差し引くんや。'
- ])}<a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6901.htm" target="_blank" rel="noopener">国税庁：消費税の納付・還付の経理処理</a></details>`;
+ ])}<p>実制度を調べるための参考資料です。ゲームの計算を実際の申告に使わないでください。</p><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6901.htm" target="_blank" rel="noopener">国税庁：消費税の納付・還付の経理処理</a></details>`;
 };
 renderAccountingGuide(null);
