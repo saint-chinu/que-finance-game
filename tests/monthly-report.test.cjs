@@ -19,7 +19,7 @@ test('monthly report has two collapsed levels and statements never require openi
   assert.match(get('reportTable').textContent,/貸借対照表/);
   assert.equal(app.document.querySelector('#report [data-tab="bs"]').getAttribute('aria-expanded'),'true');
   app.click('#report [data-tab="bs"]');assert.equal(get('reportStatementContent').hidden,true);
-  app.click('#report [data-tab="tb"]');assert.match(get('reportTable').textContent,/月次残高試算表/);
+  app.click('#report [data-tab="pl-month"]');assert.match(get('reportTable').textContent,/P\/L（単月）/);
   app.click('#report [data-tab="pl"]');assert.match(get('reportTable').textContent,/損益計算書/);
   app.click('#reportCommentDetails > summary');assert.equal(get('reportCommentDetails').open,true);
   app.click('#next');app.click('#commit');app.finishEntries();

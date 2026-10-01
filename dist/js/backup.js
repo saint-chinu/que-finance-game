@@ -32,7 +32,7 @@ function validate(payload){
   for(const e of [...s.entries,...s.pendingEntries])validEntry(e);
   let last=0;for(const h of s.history){if(h.turn!==last+1)fail();last=h.turn;balances(h.balances);}
   if(last!==(s.closed?s.turn:s.turn-1))fail();
-  const c=p.choice;if(!c||c.payment!==undefined&&!['cash','credit'].includes(c.payment)||c.creditExplained!==undefined&&typeof c.creditExplained!=='boolean'||!Array.isArray(c.quantities)||c.quantities.length!==E.PRODUCTS.length||c.quantities.some(n=>!integer(n,0,100000))||!['list','plus10','minus10','sale'].includes(c.price)||!['tend','improve','sales','hire','bank','investment','fixture'].includes(c.action))fail();
+  const c=p.choice;if(!c||c.autoOrder!==undefined&&typeof c.autoOrder!=='boolean'||c.payment!==undefined&&!['cash','credit'].includes(c.payment)||c.creditExplained!==undefined&&typeof c.creditExplained!=='boolean'||!Array.isArray(c.quantities)||c.quantities.length!==E.PRODUCTS.length||c.quantities.some(n=>!integer(n,0,100000))||!['list','plus10','minus10','sale'].includes(c.price)||!['tend','improve','sales','hire','bank','investment','fixture'].includes(c.action))fail();
   if(!Array.isArray(p.seen)||p.seen.some(x=>typeof x!=='string'))fail();
   if(p.animationQueue!==undefined&&!Array.isArray(p.animationQueue))fail();
   for(const e of p.animationQueue||[]){if(e.tutorialGroup){if(!Array.isArray(e.entries)||typeof e.memo!=='string')fail();e.entries.forEach(validEntry);}else validEntry(e);balances(e.before);balances(e.after);}
