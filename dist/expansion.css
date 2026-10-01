@@ -3,3 +3,6 @@
 
 /* Header text is light, but the management menu has a light surface. */
 .top .command-menu>summary,.top .command-menu-list button{color:#173e4f;background:#f7fbfc}.top .command-menu-list button:hover{background:#dbeef3;color:#102b3a}
+
+/* Inactive page navigation must never cover a report or journal overlay. */
+.top[inert] .command-menu-list,.shell[inert] .command-menu-list{display:none}

@@ -23,4 +23,8 @@ document.addEventListener('click',async e=>{const b=e.target.closest('button');i
 const rankButton=document.createElement('button');rankButton.id='rankingMenu';rankButton.className='help-top';rankButton.textContent='ランキング';document.querySelector('.top').append(rankButton);
 if(state.replay)syncRanked().catch(()=>{});
 // Native disclosure keeps all commands reachable without filling a phone's first screen.
-const commandMenu=document.createElement('details');commandMenu.className='command-menu';const commandSummary=document.createElement('summary');commandSummary.textContent='経営メニュー';const commandList=document.createElement('div');commandList.className='command-menu-list';for(const button of document.querySelectorAll('.top .help-top'))commandList.append(button);commandMenu.append(commandSummary,commandList);document.querySelector('.top').append(commandMenu);commandList.addEventListener('click',e=>{if(e.target.closest('button'))commandMenu.open=false;});
+const commandMenu=document.createElement('details');commandMenu.className='command-menu';const commandSummary=document.createElement('summary');commandSummary.textContent='経営メニュー';const commandList=document.createElement('div');commandList.className='command-menu-list';for(const button of document.querySelectorAll('.top .help-top'))commandList.append(button);commandMenu.append(commandSummary,commandList);document.querySelector('.top').append(commandMenu);// Close before document capture handlers (bank/property) can stop propagation.
+window.addEventListener('click',event=>{
+ const button=event.target.closest?.('button');
+ if(button&&!button.disabled&&commandList.contains(button))commandMenu.open=false;
+},true);
