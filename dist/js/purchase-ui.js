@@ -1,7 +1,7 @@
 /* One visible purchase plan, one quantity editor, and one monthly confirmation. */
 (()=>{
  const summary=document.createElement('section');summary.id='purchasePlan';summary.className='panel purchase-plan';
- summary.innerHTML='<div class="purchase-heading"><h2>今月の仕入れ</h2><div><small>追加購入の支払予定（税込）</small><strong id="purchasePlanTotal"></strong></div></div><p id="purchasePlanStatus"></p><div class="purchase-buttons"><button id="recommendOrder" class="recommend-button">おすすめで補充</button><button id="editPurchase">数量を変更</button></div><label class="auto-order"><input id="autoOrder" type="checkbox"> 毎月おすすめ量に自動調整</label><p class="note">翌月に残り在庫・季節・資金から再計算します。今月の数量は自由に変更できます。</p><p class="purchase-timing">仕入れは、社長の行動を選んだ後の「今月を確定する」で実行します。</p><p id="purchaseWarning" role="status" hidden></p>';
+ summary.innerHTML='<div class="purchase-heading"><h2>今月の仕入れ</h2><div><small>追加購入の支払予定（税込）</small><strong id="purchasePlanTotal"></strong></div></div><p id="purchasePlanStatus"></p><div class="purchase-buttons"><button id="recommendOrder" class="recommend-button">おすすめで補充</button><button id="editPurchase">数量を変更</button></div><label class="auto-order"><input id="autoOrder" type="checkbox"> 毎月おすすめ量に自動調整</label><p id="autoOrderNote" class="note" role="status"></p><p class="purchase-timing">仕入れは、社長の行動を選んだ後の「今月を確定する」で実行します。</p><p id="purchaseWarning" role="status" hidden></p>';
  document.getElementById('staffAdvice').previousElementSibling.before(summary);
  const dialog=document.createElement('dialog');dialog.id='purchaseDialog';dialog.className='purchase-dialog';dialog.setAttribute('aria-labelledby','purchaseTitle');
  dialog.innerHTML='<header><h2 id="purchaseTitle">今月、追加で買う数量</h2><button type="button" data-close-purchase aria-label="仕入れの数量変更を閉じる">✕</button></header><p class="purchase-intro">「今ある在庫」に追加する数量です。0なら買い足しません。数字を入力するか、＋・−で調整してください。</p><div class="purchase-tools"><button id="recommendInPurchase">おすすめで補充</button><button id="clearPurchase">すべて0にする</button></div><div id="purchaseEditor"></div><p id="purchaseDialogWarning" role="status" hidden></p><footer><p>変更は自動保存されます。購入・支払いは「今月を確定する」まで行われません。</p><button type="button" class="confirm" data-close-purchase>この数量で戻る</button></footer>';
@@ -25,9 +25,10 @@
  dialog.addEventListener('close',()=>{renderPlanning();returnFocus?.focus();});
  el('recommendInPurchase').addEventListener('click',()=>el('recommendOrder').click());
  el('clearPurchase').addEventListener('click',()=>{if(state.closed||state.ended)return;choice.quantities=E.PRODUCTS.map(()=>0);choice.orderSource='manual';renderPlanning();saveGame();});
- el('autoOrder').addEventListener('change',event=>{choice.autoOrder=event.target.checked;saveGame();});
+ el('autoOrder').addEventListener('change',event=>{choice.autoOrder=event.target.checked;if(choice.autoOrder)refreshPurchasePlan(true);renderPlanning();saveGame();});
  function updateSummary(){
   el('autoOrder').checked=choice.autoOrder!==false;
+  el('autoOrderNote').textContent=choice.autoOrder===false?'自動調整はオフです。前月の数量を引き継ぎます。必要なら「おすすめで補充」を押してください。':!state.closed&&choice.orderSource==='manual'?'今月は手入力の数量を使います。「おすすめで補充」で自動計算に戻せます。翌月は自動調整します。':'在庫・季節・社長の行動・販売価格・資金に合わせて、仕入れ予定を自動計算します。';
   const locked=state.closed||state.ended,zero=choice.quantities.every(q=>!q),error=locked?'':E.validation(state,choice.quantities,currentAction(),choice.payment||'cash');
   const payment=choice.payment||'cash',quote=E.purchaseQuote(state,choice.quantities,payment),due=E.scheduled(state).payables;
   paymentPanel.querySelectorAll('[data-payment]').forEach(b=>{b.disabled=locked;b.setAttribute('aria-pressed',String(b.dataset.payment===payment));});

@@ -18,9 +18,9 @@ document.addEventListener('click',e=>{
  try{
   if(role){const id=b.dataset.characterId,c=E.STAFF_CHARACTERS[id],r=E.ROLES[role];if(!c||!E.staffCandidates(state).includes(id))throw Error('今月の候補から選び直してください。');
    openShop('採用条件を確認',`<div class="career-heading"><img src="assets/characters/${c.image}" alt="${c.name}"><h3>${c.name} · ${r.name}</h3></div>${hiringCapacityNote()}<p>接客力目安：${r.service}人／月。人物・営業状況により変わります。</p><p>月給 ${yen(r.wage)}${role==='parttime'?'':' ＋ 会社負担社保 '+yen(Math.floor(r.wage*.15))}。今月から満額支給します。新人が店番し、クエは採用に専念します。</p><button data-confirm-hire="${role}" data-character-id="${id}">この条件で採用する</button><button id="cancelHire">戻る</button>`);
-  }else if(hire){state=E.hire(state,hire,b.dataset.characterId);choice.action='hire';choice.quantities=E.recommend(state,'hire',choice.price);choice.orderSource='recommended';closeShop();renderPlanning();saveGame();}
+  }else if(hire){state=E.hire(state,hire,b.dataset.characterId);choice.action='hire';closeShop();renderPlanning();saveGame();}
   else if(b.id==='bankMenu'){pendingBankRequest=null;showBankConsultation();}
-  else if(b.id==='confirmBankConsultation'){state=E.consultBank(state);choice.action='bank';choice.quantities=E.recommend(state,'bank',choice.price);choice.orderSource='recommended';renderPlanning();saveGame();if(pendingBankRequest){const resume=pendingBankRequest;pendingBankRequest=null;closeShop();resume();}else openBankDesk();}
+  else if(b.id==='confirmBankConsultation'){state=E.consultBank(state);choice.action='bank';renderPlanning();saveGame();if(pendingBankRequest){const resume=pendingBankRequest;pendingBankRequest=null;closeShop();resume();}else openBankDesk();}
   else if(b.id==='viewBankAssessment'){pendingBankRequest=null;openBankDesk();}
   else if(b.id==='propertyMenu')showDiversification();
  }catch(err){toast(err.message);}

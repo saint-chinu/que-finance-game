@@ -58,7 +58,7 @@ test('discounted perishables expire at their actual remaining cost',()=>{
 test('new payment operations are recorded and replayed through the same server engine',()=>{
  const {bootDOM}=require('./helpers/dom.cjs'),ui=bootDOM();try{
   ui.click('#welcomeStart');ui.click('#skipIntro');
-  ui.run("state=ShopReplay.create(42);state.replay={id:'12345678-1234-1234-1234-123456789012',seed:42,scenario:'2026-10',engine:ShopReplay.VERSION,ops:[]};choice.quantities=E.PRODUCTS.map((p,i)=>i===0?10:0);choice.payment='credit';renderPlanning();");
+  ui.run("state=ShopReplay.create(42);state.replay={id:'12345678-1234-1234-1234-123456789012',seed:42,scenario:'2026-10',engine:ShopReplay.VERSION,ops:[]};choice.quantities=E.PRODUCTS.map((p,i)=>i===0?10:0);choice.payment='credit';choice.orderSource='manual';renderPlanning();");
   ui.click('#commit');ui.finishEntries();const command=JSON.parse(ui.run('JSON.stringify(state.replay.ops.at(-1))'));
   assert.deepEqual(command,{op:'run',args:[q(0,10),'list','tend',{payment:'credit'}]});
   assert.deepEqual(R.apply(R.create(42),command).state.balances,JSON.parse(ui.run('JSON.stringify(state.balances)')));

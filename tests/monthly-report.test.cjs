@@ -78,7 +78,7 @@ test('zero-sales closure requires an explicit decision and cancelling spends no 
 
 test('empty inventory is explained separately even with a staff member tending the store',()=>{
  const app=bootDOM();try{
-  app.run(`skipIntro();state=E.hire(state,'parttime');state=E.next(E.run(state,E.PRODUCTS.map(()=>0),'list','hire').state);for(let i=0;i<E.PRODUCTS.length;i++){const n=state.inventory[i];E.take(state,i,n);E.entry(state,'商品廃棄損','商品',n*E.PRODUCTS[i].cost,'在庫なしの検証');}choice.quantities=E.PRODUCTS.map(()=>0);E.sponsorEvent=()=>true;choice.action='sales';renderPlanning();`);
+  app.run(`skipIntro();state=E.hire(state,'parttime');state=E.next(E.run(state,E.PRODUCTS.map(()=>0),'list','hire').state);for(let i=0;i<E.PRODUCTS.length;i++){const n=state.inventory[i];E.take(state,i,n);E.entry(state,'商品廃棄損','商品',n*E.PRODUCTS[i].cost,'在庫なしの検証');}choice.quantities=E.PRODUCTS.map(()=>0);choice.orderSource='manual';E.sponsorEvent=()=>true;choice.action='sales';renderPlanning();`);
   const before=app.run('JSON.stringify(state)');app.click('#commit');
   assert.equal(app.run('JSON.stringify(state)'),before);
   assert.match(app.document.getElementById('shopDialogBody').textContent,/従業員が店番/);
