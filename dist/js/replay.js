@@ -13,6 +13,7 @@ function apply(s,command){if(!command||typeof command!=='object'||!Array.isArray
  case 'rescueBank':state=E.rescueBank(s,a[0],a[1]);break;
  case 'rescueAbandon':state=E.abandonRescue(s);break;
  case 'settings':state=settings(s,a[0]);break;
+ case 'productPrice':if(a.length!==2)throw Error('販売価格の条件が不正です');state=E.setProductPrice(s,a[0],a[1]);break;
  case 'buy':state=E.buy(s,a[0]);break;
  case 'hire':state=E.hire(s,a[0],a[1]??null);break;
  case 'consultBank':state=E.consultBank(s);break;
@@ -46,7 +47,7 @@ function apply(s,command){if(!command||typeof command!=='object'||!Array.isArray
  E.assertState(state);return {state,report};
 }
 function installRecording(){let depth=0;const wrap=(object,key,op,map=a=>a,resultState=r=>r)=>{const fn=object[key];object[key]=function(source,...args){const outer=depth===0;depth++;let r;try{r=fn(source,...args);}finally{depth--;}const n=resultState(r);if(outer&&source?.replay&&n&&n!==source){n.replay={...source.replay,ops:[...source.replay.ops,{op,args:structuredClone(map(args))}]};}return r;};};
- for(const [key,op] of [['rescueOwner','rescueOwner'],['rescueBank','rescueBank'],['abandonRescue','rescueAbandon'],['next','next'],['playerSettings','settings'],['buy','buy'],['hire','hire'],['consultBank','consultBank'],['promoteStaff','promote'],['deferStaff','deferStaff'],['lendByOwner','ownerFund'],['repayToOwner','ownerRepay'],['resolveTaxEvidence','evidence']])wrap(E,key,op);
+ for(const [key,op] of [['setProductPrice','productPrice'],['rescueOwner','rescueOwner'],['rescueBank','rescueBank'],['abandonRescue','rescueAbandon'],['next','next'],['playerSettings','settings'],['buy','buy'],['hire','hire'],['consultBank','consultBank'],['promoteStaff','promote'],['deferStaff','deferStaff'],['lendByOwner','ownerFund'],['repayToOwner','ownerRepay'],['resolveTaxEvidence','evidence']])wrap(E,key,op);
  wrap(E,'run','run',a=>a[3]?.payment? [...a.slice(0,3),{payment:a[3].payment}]:a.slice(0,3),r=>r.state);
  wrap(B,'execute','bankLoan',a=>a.slice(1,3));wrap(B,'renew','renew',a=>a[2]===undefined?[a[1]]:[a[1],a[2]]);
  for(const [key,op] of [['promoteCaptain','promoteCaptain'],['setBoatUse','boatUse'],['transferStaff','transfer'],['cutWage','cutWage'],['restoreWage','restoreWage'],['exitBusiness','exitBusiness'],['hireCrew','crew'],['setFishing','fishing'],['setSupply','supply'],['chooseTaxPolicy','taxPolicy'],['setSalary','salary'],['disposeStock','dispose'],['livingCharge','living'],['resolveFinding','finding'],['negotiate','ma']])wrap(X,key,op);

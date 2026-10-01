@@ -27,12 +27,17 @@ async function main() {
   assert(scenario.seed);
   response = await fetch(base + '/api/start', { method: 'POST', headers: { Origin: base, 'Content-Type': 'application/json' }, body: JSON.stringify({ scenario: scenario.scenario }) });
   assert.equal(response.status, 200);
-  const cookie = response.headers.get('set-cookie').split(';')[0], run = await response.json(), state = R.create(run.seed);
-  response = await fetch(base + '/api/run/' + run.id + '/step', { method: 'POST', headers: { Origin: base, Cookie: cookie, 'Content-Type': 'application/json' }, body: JSON.stringify({ revision: 0, command: { op: 'run', args: [E.recommend(state), 'list', 'tend'] } }) });
+  const cookie = response.headers.get('set-cookie').split(';')[0], run = await response.json(), state = E.setProductPrice(R.create(run.seed),0,605);
+  const step = command => fetch(base + '/api/run/' + run.id + '/step', { method: 'POST', headers: { Origin: base, Cookie: cookie, 'Content-Type': 'application/json' }, body: JSON.stringify({ revision: 0, command }) });
+  assert.equal((await step({op:'productPrice',args:[0,-1]})).status,422);
+  response = await step({op:'productPrice',args:[0,605]});
   assert.equal(response.status, 200);
   assert.equal((await response.json()).revision, 1);
+  response = await fetch(base + '/api/run/' + run.id + '/step', { method: 'POST', headers: { Origin: base, Cookie: cookie, 'Content-Type': 'application/json' }, body: JSON.stringify({ revision: 1, command: { op: 'run', args: [E.recommend(state), 'list', 'tend'] } }) });
+  assert.equal(response.status, 200);
+  assert.equal((await response.json()).revision, 2);
   assert.equal((await fetch(base + '/api/run/' + run.id)).status, 404);
-  console.log('Cloudflare local smoke passed: assets, hidden files, D1 start, turn replay, ownership.');
+  console.log('Cloudflare local smoke passed: assets, hidden files, D1 start, product pricing, turn replay, ownership.');
 }
 main().catch(error => { console.error(error); process.exitCode = 1; }).finally(() => {
   try { if (process.platform === 'win32') spawnSync('taskkill', ['/pid', String(server.pid), '/T', '/F'], { windowsHide: true, stdio: 'ignore' }); else process.kill(-server.pid, 'SIGTERM'); } catch {}
