@@ -8,7 +8,7 @@ function boot(saved=[]){
       addEventListener(){},setAttribute(){},focus(){},insertAdjacentHTML(_position,html){this.innerHTML+=html;},after(){},before(){},append(){},showModal(){this.open=true;},close(){this.open=false;},querySelector(){return node();},querySelectorAll(){return [];},previousElementSibling:{querySelector(){return node();}},offsetParent:{}};
   }
   const get=id=>{if(!elements.has(id))elements.set(id,node(id));return elements.get(id)};
-  const context={console,structuredClone,setTimeout:()=>0,clearTimeout(){},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)},document:{getElementById:get,querySelector:s=>get(s),querySelectorAll:()=>[],addEventListener(){},createElement:()=>node(),body:node(),activeElement:node()},window:{scrollTo(){}},location:{reload(){}}};
+  const context={console,structuredClone,setTimeout:()=>0,clearTimeout(){},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)},document:{getElementById:get,querySelector:s=>get(s),querySelectorAll:()=>[],addEventListener(){},createElement:()=>node(),body:node(),activeElement:node()},window:{scrollTo(){},addEventListener(){}},location:{reload(){}}};
   vm.createContext(context);
   for(const file of ['expansion-engine','rescue','engine','bank','underwriting','replay','legacy','shop','bank-ui','review-ui','planning','finance-upgrade','ratios-ui','longterm-ui','progress','backup','completion-ui','payment-lessons','staff-tax-ui','expansion-ui','ranking-ui'])vm.runInContext(fs.readFileSync(`dist/js/${file}.js`,'utf8'),context,{filename:file+'.js'});
   return {get,storage,run:code=>vm.runInContext(code,context)};

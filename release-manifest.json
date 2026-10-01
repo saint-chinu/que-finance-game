@@ -124,7 +124,7 @@
     "tests/expansion.test.cjs": "5598dd6ba633606e761e6dbe6bf61a62e0046156232c76475761952d4432a357",
     "tests/finance-upgrade.test.cjs": "e6e2535ce199c709d9937929954ca6193af1b43cbaf8f8f36cc5112267da3608",
     "tests/helpers/dom.cjs": "dcd992b8bdb570769fae7925e6d87e554ff20b486327d39fd2efe67dedebeb81",
-    "tests/helpers/ui.cjs": "45f00804d0f725ca5b9430c6b2a84247fd6dc77ea09f20670f4afc230b2519bb",
+    "tests/helpers/ui.cjs": "e5eb85ca4b94f77ca53f501dba742bcb516d039dd1f474e9b9c6f315ee5b9a67",
     "tests/loan-lessons.test.cjs": "c99bb2e5a155722103efb32ac68e1fea22d58b11db70b00bef0ec8cc7a5025a9",
     "tests/longterm.test.cjs": "3fc981f0bd6f418d3daf58a884defe927531bb023d9bfe6b51f58ac27be8cc3a",
     "tests/monthly-report.test.cjs": "7a7dae5af888c2d898001cb1e80577fd07c71f81920008ac507fc212ba6d4461",
