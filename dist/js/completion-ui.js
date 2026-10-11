@@ -1,3 +1,21 @@
+function appendResultShare(r,score,annual=false){
+ if(!r)return;
+ const url='https://que-finance-game.doppel-tag.workers.dev/';
+ const tags='資本主義の権化,ブラウザゲーム';
+ const period=annual?`第${r.year}期 ${r.complete?'決算':`${r.months}か月の期中成績`}`:`${r.completed?'10年間の経営完了':r.ended?'経営終了':'経営途中'}・確定${r.months}か月`;
+ const lines=['『資本主義の権化〜財務で遊ぼう〜』',period];
+ if(!annual)lines.push(`財務スコア：${score==null?'未確定':`${score}/100`}`);
+ lines.push(`${annual?'税引後損益':'累計税引後損益'} ${signedYen(r.profit)}`,`会社預金 ${yen(r.cash)} ／ 自己資本 ${yen(r.equity)}`);
+ const text=lines.join('\n'),copyText=`${text}\n${url}\n#${tags.split(',').join(' #')}`;
+ const section=document.createElement('section');section.className='result-share';section.setAttribute('aria-label','結果を共有');
+ const preview=document.createElement('p');preview.className='result-share-preview';preview.textContent=copyText;
+ const actions=document.createElement('div');actions.className='result-share-actions';
+ const link=document.createElement('a');link.textContent='結果をXで共有';link.target='_blank';link.rel='noopener noreferrer';link.href='https://x.com/intent/post?'+new URLSearchParams({text,url,hashtags:tags});
+ const copy=document.createElement('button');copy.type='button';copy.textContent='結果をコピー';
+ const status=document.createElement('p');status.setAttribute('role','status');
+ copy.onclick=async()=>{try{await navigator.clipboard.writeText(copyText);status.textContent='結果をコピーしました。';}catch{status.textContent='コピーできませんでした。上の文面を選択してコピーしてください。';}};
+ actions.append(link,copy);section.append(preview,actions,status);el('shopDialogBody').append(section);
+}
 /* Year-end reflection, goals, tax-loss disclosure, and portable local saves. */
 const P=ShopProgress,Backup=ShopBackup;
 const signedYen=n=>(n<0?'▲':n>0?'＋':'±')+yen(Math.abs(n));
@@ -24,12 +42,14 @@ function yearReviewView(r){
 function showYearReview(year){
  const all=P.allReviews(state),r=all.find(r=>r.year===Number(year))||all.at(-1);
  openShop('決算を振り返る',`<label>振り返る期 <select id="reviewYear">${all.map(y=>`<option value="${y.year}" ${r?.year===y.year?'selected':''}>第${y.year}期${y.complete?' 決算':' 期中'}</option>`).join('')}</select></label>${yearReviewView(r)}<button id="showGoals">目標と達成記録を見る</button><button id="showCareerResult">ここまでの経営を振り返る</button>`);
+ appendResultShare(r,null,true);
  if(r?.complete){state.reviewSeen=Array.from(new Set([...(state.reviewSeen||[]),r.year]));saveGame();}
 }
 showFinalResult=function(){
  const r=P.summary(state),years=r.years,score=currentBankAssessment().score;
  const title=r.ended?'経営終了 · 数字から振り返る':r.completed?'10年間の経営を完了':'ここまでの経営記録';
  openShop(title,`<div class="career-heading"><img src="assets/characters/que.png" alt="クエ"><p>${r.ended?'クエ「ここで資金が尽きてもうた。何が原因やったか、数字で確かめて次に活かすで。」':r.completed?'クエ「10年続けられたで！ 預金だけやなく、残った借金と自己資本も確かめよか。」':'クエ「今までの積み重ねを見て、次の経営を考えるで。」'}</p></div>${r.ended?`<p class="negative">${state.balances.預金<0?'会社預金が '+yen(state.balances.預金)+' になりました。':''}${state.owner<0?'個人生活費の不足 '+yen(-state.owner)+' を賄えませんでした。':''}</p>`:''}<p>財務スコア：<b>${score??'未確定'}</b>${score===null?'':' / 100'}</p><p>確定済み ${r.months}か月 ／ 初めて年間黒字になった期：${r.firstProfitYear?'第'+r.firstProfitYear+'期':'まだありません'}</p><div class="review-grid"><article><small>累計税引後損益</small><b>${signedYen(r.profit)}</b></article><article><small>自己資本</small><b>${yen(r.equity)}</b></article><article><small>会社預金 / 銀行借入</small><b>${yen(r.cash)} / ${yen(r.debt)}</b></article><article><small>個人預金 / 会社から借りた元金</small><b>${yen(r.ownerCash)} / ${yen(r.ownerLoan)}</b></article></div><p>個人預金は会社預金に加算しません。累計損益には終了した期の途中までを含み、借入入金を利益に数えません。</p><div class="review-table"><table><thead><tr><th>期</th><th>売上</th><th>税引後損益</th><th>末預金</th><th>銀行借入</th></tr></thead><tbody>${years.map(y=>`<tr><th><button data-review-year="${y.year}">第${y.year}期${y.complete?'':'（途中）'}</button></th><td>${yen(y.sales)}</td><td>${signedYen(y.profit)}</td><td>${yen(y.cash)}</td><td>${yen(y.debt)}</td></tr>`).join('')}</tbody></table></div>${years.length?reviewAdvice(years.at(-1)):''}<button id="showGoals">目標と達成記録を見る</button><button id="backupMenuInResult">この経営記録を保存する</button>`);
+ appendResultShare(r,score);
 };
 function showGoals(){
  openShop('経営の目標と達成記録',`<p>目標は学習の道しるべです。達成してもお金や集客力は自動で増えません。</p><ol class="goal-list">${P.milestones(state).map(g=>`<li class="${g.turn?'achieved':''}"><b>${g.turn?'✓':'○'} ${g.title}</b><p>${g.description}</p><small>${g.turn?turnName(g.turn)+'に達成':'これからの目標'}</small></li>`).join('')}</ol>${taxLossView()}`);

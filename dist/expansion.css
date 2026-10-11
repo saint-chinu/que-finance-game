@@ -6,3 +6,9 @@
 
 /* Inactive page navigation must never cover a report or journal overlay. */
 .top[inert] .command-menu-list,.shell[inert] .command-menu-list{display:none}
+
+.result-share{margin-top:22px;padding:18px;border:1px solid #b8c8b7;border-radius:12px;background:#f2f6eb}
+.result-share-preview{white-space:pre-line;overflow-wrap:anywhere;user-select:text;line-height:1.8}
+.result-share-actions{display:flex;flex-wrap:wrap;gap:10px}
+.result-share-actions>a,.result-share-actions>button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid #526e49;border-radius:8px;background:#304b32;color:white;font:inherit;text-decoration:none;cursor:pointer}
+.result-share [role=status]{font-size:13px;min-height:1.5em;margin-bottom:0}
